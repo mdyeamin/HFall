@@ -22,8 +22,7 @@
             </svg>
         </button>
         <!-- Backdrop -->
-        <div id="sidebar-backdrop" class="fixed inset-0 z-40 hidden md:hidden"
-            onclick="closeSidebar()"></div>
+        <div id="sidebar-backdrop" class="fixed inset-0 z-40 hidden md:hidden" onclick="closeSidebar()"></div>
         <!-- Sidebar + Header -->
         <div class="flex min-h-screen">
 
@@ -79,11 +78,13 @@
 
                         <!-- Dropdown -->
                         <ul class="mt-2 ml-6 space-y-2 hidden dropdown-menu">
-                            <li><a href="all_members_payment.html" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="all_members_payment.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/all_members_payments.png" alt="">
                                     All Members Payments</a>
                             </li>
-                            <li><a href="pending_payments.html" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="pending_payments.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/pending.png" alt="">
                                     Pending Payments</a>
                             </li>
@@ -293,68 +294,36 @@
                     <!-- Table -->
                     <!-- Only adds horizontal scroll on small screens (md and down) -->
                     <!-- Scrollable Table Wrapper -->
-                    <div class="w-full overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
+                    <div
+                        class="w-full overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
                         <table class="min-w-[800px] w-full text-left text-sm">
                             <thead class="bg-gray-100 font-semibold">
                                 <tr>
-                                    <th class="p-2">Data</th>
-                                    <th class="p-2">User</th>
-                                    <th class="p-2">Bank</th>
-                                    <th class="p-2">Amount</th>
-                                    <th class="p-2">Status</th>
-                                    <th class="p-2">Action</th>
+                                    <th class="p-2 text-center">Description</th>
+                                    <th class="p-2 text-center">Amount</th>
+                                    <th class="p-2 text-center">Status</th>
+                                    <th class="p-2 text-center">Created By</th>
+                                    <th class="p-2 text-center">Date</th>
+                                    <th class="p-2 text-center">Action</th>
                                 </tr>
                             </thead>
                             <tbody class="">
                                 <tr>
-                                    <td class="p-2">May 14, 2025</td>
-                                    <td class="p-2">admin@gmail.com</td>
-                                    <td class="p-2">Stripe</td>
-                                    <td class="p-2 ">$222.00</td>
-                                    <td class="p-2 text-green-600">Approved</td>
-                                    <td class="p-2 "><button class="bg-gray-200 px-4 py-1 rounded">Review</button></td>
+                                    <td class="p-2 text-center">Travel to PA</td>
+                                    <td class="p-2 text-center">$1000.00</td>
+                                    <td class="p-2 text-center text-green-600">Approved</td>
+                                    <td class="p-2 text-center">Rimon Mrid...</td>
+                                    <td class="p-2 text-center ">May 19, 2025</td>
+                                    <td class="p-2 text-center">
+                                        <div class="flex gap-2 justify-center">
+                                            <button
+                                                class="bg-gray-200 text-gray-800 px-4 py-1 rounded hover:bg-gray-300">View</button>
+                                            <button class="bg-[#183665] text-white px-4 py-1 rounded">View</button>
+                                        </div>
+                                    </td>
+
                                 </tr>
-                                <tr>
-                                    <td class="p-2">May 14, 2025</td>
-                                    <td class="p-2">admin@gmail.com</td>
-                                    <td class="p-2">Stripe</td>
-                                    <td class="p-2 ">$222.00</td>
-                                    <td class="p-2 text-green-600">Approved</td>
-                                    <td class="p-2 "><button class="bg-gray-200 px-4 py-1 rounded">Review</button></td>
-                                </tr>
-                                <tr>
-                                    <td class="p-2">May 14, 2025</td>
-                                    <td class="p-2">admin@gmail.com</td>
-                                    <td class="p-2">Stripe</td>
-                                    <td class="p-2 ">$222.00</td>
-                                    <td class="p-2 text-green-600">Approved</td>
-                                    <td class="p-2 "><button class="bg-gray-200 px-4 py-1 rounded">Review</button></td>
-                                </tr>
-                                <tr>
-                                    <td class="p-2">May 14, 2025</td>
-                                    <td class="p-2">admin@gmail.com</td>
-                                    <td class="p-2">Stripe</td>
-                                    <td class="p-2 ">$222.00</td>
-                                    <td class="p-2 text-green-600">Approved</td>
-                                    <td class="p-2 "><button class="bg-gray-200 px-4 py-1 rounded">Review</button></td>
-                                </tr>
-                                <tr>
-                                    <td class="p-2">May 14, 2025</td>
-                                    <td class="p-2">admin@gmail.com</td>
-                                    <td class="p-2">Stripe</td>
-                                    <td class="p-2 ">$222.00</td>
-                                    <td class="p-2 text-green-600">Approved</td>
-                                    <td class="p-2 "><button class="bg-gray-200 px-4 py-1 rounded">Review</button></td>
-                                </tr>
-                                <tr>
-                                    <td class="p-2">May 14, 2025</td>
-                                    <td class="p-2">admin@gmail.com</td>
-                                    <td class="p-2">Stripe</td>
-                                    <td class="p-2 ">$222.00</td>
-                                    <td class="p-2 text-green-600">Approved</td>
-                                    <td class="p-2 "><button class="bg-gray-200 px-4 py-1 rounded">Review</button></td>
-                                </tr>
-                               
+
                                 <!-- More rows -->
                             </tbody>
                         </table>
