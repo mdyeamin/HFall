@@ -22,7 +22,7 @@
             </svg>
         </button>
         <!-- Backdrop -->
-        <div id="sidebar-backdrop" class="fixed inset-0 bg-black bg-opacity-40 z-40 hidden md:hidden"
+        <div id="sidebar-backdrop" class="fixed inset-0 z-40 hidden md:hidden"
             onclick="closeSidebar()"></div>
         <!-- Sidebar + Header -->
         <div class="flex min-h-screen">
@@ -79,19 +79,19 @@
 
                         <!-- Dropdown -->
                         <ul class="mt-2 ml-6 space-y-2 hidden dropdown-menu">
-                            <li><a href="#" class="block px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="#" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/all_members_payments.png" alt="">
                                     All Members Payments</a>
                             </li>
-                            <li><a href="#" class="block px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="#" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/pending.png" alt="">
                                     Pending Payments</a>
                             </li>
-                            <li><a href="#" class="block px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="#" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/expenses.png" alt="">
                                     My Expenses</a>
                             </li>
-                            <li><a href="#" class="block px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="#" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/payments.png" alt="">
                                     My Payments</a>
                             </li>
@@ -293,7 +293,7 @@
                     <!-- Table -->
                     <!-- Only adds horizontal scroll on small screens (md and down) -->
                     <!-- Scrollable Table Wrapper -->
-                    <div class="w-full overflow-x-auto md:overflow-visible">
+                    <div class="w-full overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
                         <table class="min-w-[800px] w-full text-left text-sm">
                             <thead class="bg-gray-100 font-semibold">
                                 <tr>
