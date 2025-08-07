@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- fontawesome  -->
+    <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="bg-gray-100 text-sm font-sans max-w-7xl mx-auto">
+        <!-- Sidebar + Header -->
+        <div class="flex min-h-screen">
+
+            <!-- Sidebar -->
+            <aside class="w-64 bg-white shadow-lg p-4">
+                <div class="mb-8">
+                    <img src="../images/logo.png" alt="HFALL Logo" class="h-10" />
+                </div>
+                <ul class=" ">
+                    <a class="hover:bg-gray-100 rounded" href="">
+                        <li  class="text-base flex items-center py-2 hover:bg-gray-100 rounded">
+                            <img class="w-4 h-4 mr-1" src="../images/dashboard.png" alt="">
+                            Dashboard
+                        </li>
+                    </a>
+                    <a class="py-2 hover:bg-gray-100 rounded" href="">
+                        <li class="text-base flex items-center py-2 hover:bg-gray-100 rounded">
+                            <img class="w-4 h-4 mr-1" src="../images/profile.png" alt="">
+                            Profile
+                        </li>
+                    </a>
+                    <a class="py-2 hover:bg-gray-100 rounded" href="">
+                        <li class="text-base flex items-center py-2 hover:bg-gray-100 rounded">
+                            <img class="w-4 h-4 mr-1" src="../images/manage.png" alt="">
+                            Manage Properties
+                        </li>
+                    </a>
+                    <!-- nested  -->
+                    <!-- Sidebar Menu Item Example -->
+                    <li class="text-base">
+                        <button onclick="toggleDropdown(this)"
+                            class="w-full flex items-center justify-between py-2 hover:bg-gray-100 rounded">
+                            <div class="flex items-center">
+                                <img class="w-4 h-4 mr-2" src="../images/Finance.png" alt="">
+                                <span>Finance</span>
+                            </div>
+                            <svg class="w-4 h-4 transform transition-transform duration-200 dropdown-arrow" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown -->
+                        <ul class="mt-2 ml-6 space-y-2 hidden dropdown-menu">
+                            <li ><a href="#" class="block px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="../images/all_members_payments.png" alt="">
+                                    All Members Payments</a>
+                            </li>
+                            <li><a href="#" class="block px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="../images/pending.png" alt="">
+                                    Pending Payments</a>
+                            </li>
+                            <li><a href="#" class="block px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="../images/expenses.png" alt="">
+                                    My Expenses</a>
+                            </li>
+                            <li><a href="#" class="block px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="../images/payments.png" alt="">
+                                    My Payments</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- nested  -->
+                    <!-- Sidebar Menu Item Example -->
+                    <li class="text-base">
+                        <button onclick="toggleDropdown(this)"
+                            class="w-full flex items-center justify-between py-2 hover:bg-gray-100 rounded">
+                            <div class="flex items-center">
+                                <img class="w-4 h-4 mr-2" src="../images/Finance.png" alt="">
+                                <span>Agreement</span>
+                            </div>
+                            <svg class="w-4 h-4 transform transition-transform duration-200 dropdown-arrow" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown -->
+                        <ul class="mt-2 ml-6 space-y-2 hidden dropdown-menu">
+                            <li><a href="#" class="block px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="../images/upload_agreement.png" alt="">
+                                   Upload Agreement</a>
+                            </li>
+                            <li><a href="#" class="block px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="../images/pending.png" alt="">
+                                    User Agreement List</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <!-- nested  -->
+                    <!-- Sidebar Menu Item Example -->
+                    <li class="text-base">
+                        <button onclick="toggleDropdown(this)"
+                            class="w-full flex items-center justify-between py-2 hover:bg-gray-100 rounded">
+                            <div class="flex items-center">
+                                <img class="w-4 h-4 mr-2" src="../images/meeting.png" alt="">
+                                <span>Meeting Options</span>
+                            </div>
+                            <svg class="w-4 h-4 transform transition-transform duration-200 dropdown-arrow" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown -->
+                        <ul class="mt-2 ml-6 space-y-2 hidden dropdown-menu">
+                            <li><a href="#" class="block px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="../images/meeting_schedule.png" alt="">
+                                  Meeting Schedule</a>
+                            </li>
+                            <li><a href="#" class="block px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="../images/view_calendar.png" alt="">
+                                    View Calendar</a>
+                            </li>
+                            <li><a href="#" class="block px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="../images/meeting_recording.png" alt="">
+                                    Meeting Recording</a>
+                            </li>
+                            <li><a href="#" class="block px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="../images/upload_agreement.png" alt="">
+                                    Meeting Upload</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <a class="py-2 hover:bg-gray-100 rounded" href="">
+                        <li class="text-base flex items-center py-2 hover:bg-gray-100 rounded">
+                            <img class="w-4 h-4 mr-1" src="../images/member.png" alt="">
+                            Members
+                        </li>
+                    </a>
+                    <a class="py-2 hover:bg-gray-100 rounded" href="">
+                        <li class="text-base flex items-center py-2 hover:bg-gray-100 rounded">
+                            <img class="w-4 h-4 mr-1" src="../images/all_members.png" alt="">
+                            All Members
+                        </li>
+                    </a>
+                    <a class="py-2 hover:bg-gray-100 rounded" href="">
+                        <li class="text-base flex items-center py-2 hover:bg-gray-100 rounded">
+                            <img class="w-4 h-4 mr-1" src="../images/create_announcement.png" alt="">
+                            Create Announcement
+                        </li>
+                    </a>
+                    <a class="py-2 hover:bg-gray-100 rounded" href="">
+                        <li class="text-base flex items-center py-2 hover:bg-gray-100 rounded">
+                            <img class="w-4 h-4 mr-1" src="../images/contact_Us.png" alt="">
+                            Contact Us
+                        </li>
+                    </a>
+                    <a class="py-2 hover:bg-gray-100 rounded" href="">
+                        <li class="text-base flex items-center py-2 hover:bg-gray-100 rounded">
+                            <img class="w-4 h-4 mr-1" src="../images/events_video.png" alt="">
+                            Events Video
+                        </li>
+                    </a>
+                    <a class="py-2 hover:bg-gray-100 rounded" href="">
+                        <li class="text-base flex items-center py-2 hover:bg-gray-100 rounded">
+                            <img class="w-4 h-4 mr-1" src="../images/contact_Wyth_Myth.png" alt="">
+                            Contact Wyth Myth
+                        </li>
+                    </a>
+
+
+                </ul>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="flex-1">
+                <div class="flex justify-between items-center mb-6 bg-white px-2 py-4">
+                    <div>
+                        <h1 class="text-lg font-semibold"><span class="text-gray-500 text-base">Welcome,</span>
+                            <br> <span class="text-2xl"> Rimon Mridha</span>
+                        </h1>
+
+                    </div>
+                    <div class="">
+                        <p class=""><span class="text-base">Total Investment:</span> <span
+                                class="text-white px-4 py-2 rounded-lg bg-[#183665] font-bold">-
+                                $1922.00</span></p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-2xl font-bold">Payments</h2>
+
+                    </div>
+                    <hr class="mb-5 px-5 border-gray-200">
+
+                    <!-- Filter -->
+                    <div class="grid grid-cols-1 md:grid-cols-5 gap-4 mb-4">
+                        <select class="border px-3 py-2 rounded w-full">
+                            <option>Select Status</option>
+                        </select>
+                        <select class="border px-3 py-2 rounded w-full">
+                            <option>Select User</option>
+                        </select>
+                        <select class="border px-3 py-2 rounded w-full">
+                            <option>Select Bank</option>
+                        </select>
+
+                        <button class="bg-[#46b669] font-bold text-white rounded">Total = $5,000</button>
+                        <button class="bg-[#f79533] text-white px-3 py-1 rounded">Download Excel</button>
+                    </div>
+
+                    <!-- show & search -->
+                    <div class="flex justify-between items-center my-10 ">
+                        <div class="flex items-center gap-2">
+                            <p>Show:</p>
+                            <div class="relative inline-block w-20">
+                                <select
+                                    class="block w-full border border-gray-300 px-4 py-2 pr-10 rounded-md text-gray-700 focus:outline-none focus:ring-2  appearance-none bg-white">
+                                    <option>10</option>
+                                    <option>20</option>
+                                    <option>50</option>
+                                    <option>100</option>
+                                </select>
+                                <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                                    <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <p>entries</p>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="text" placeholder="Search here..."
+                                class="w-full px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none   focus:border-yellow-[#183665]" />
+                            <button
+                                class="px-4 py-2 bg-[#183665] text-white font-semibold rounded-r-md  focus:outline-none focus:ring-2">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <!-- Table -->
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full text-left text-sm">
+                            <thead class="bg-gray-100 font-semibold">
+                                <tr>
+                                    <th class="p-2">User</th>
+                                    <th class="p-2">Bank</th>
+                                    <th class="p-2">Amount</th>
+                                    <th class="p-2">Status</th>
+                                    <th class="p-2">Receipt</th>
+                                    <th class="p-2">Created At</th>
+                                    <th class="p-2">Approved By</th>
+                                    <th class="p-2">Approved At</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y">
+                                <tr>
+                                    <td class="p-2">Hasibul Hosa...</td>
+                                    <td class="p-2">Stripe</td>
+                                    <td class="p-2">$502.68</td>
+                                    <td class="p-2 text-green-600">Approved</td>
+                                    <td class="p-2 text-blue-500">View</td>
+                                    <td class="p-2">07.26.25, 17:43</td>
+                                    <td class="p-2">Hfall Realty</td>
+                                    <td class="p-2">07.26.25, 17:43</td>
+                                </tr>
+                                <!-- Repeat this row for other entries -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="flex justify-between items-center mt-4">
+                        <p class="text-sm text-gray-500">Showing 01 of 20 Result</p>
+                        <div class="flex gap-2">
+                            <button class="px-2 py-1 border rounded">1</button>
+                            <button class="px-2 py-1 border rounded">2</button>
+                            <button class="px-2 py-1 border rounded">3</button>
+                            <button class="px-2 py-1 border rounded">Next →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <footer class="text-center text-gray-500 text-xs mt-10">
+                    © 2025 Hfall Realty. All Rights Reserved. Designed & Developed by <span
+                        class="font-semibold text-[#183665]">Wyth Myth</span>
+                </footer>
+            </main>
+
+        </div>
+    </div>
+
+    <script>
+        // navigation nested  
+
+        function toggleDropdown(button) {
+            const parentLi = button.closest('li');
+            const dropdown = parentLi.querySelector('.dropdown-menu');
+            const arrow = parentLi.querySelector('.dropdown-arrow');
+
+            dropdown.classList.toggle('hidden');
+            arrow.classList.toggle('rotate-180');
+        }
+
+
+    </script>
+</body>
+
+</html>
