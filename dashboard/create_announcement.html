@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- fontawesome  -->
+    <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
+    <title>HFall</title>
+</head>
+
+<body>
+
+    <div class="bg-gray-100 text-sm font-sans max-w-7xl mx-auto">
+        <!-- Menu Toggle Button -->
+        <button class="md:hidden p-2 m-2 bg-gray-200 rounded" onclick="toggleSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+        <!-- Backdrop -->
+        <div id="sidebar-backdrop" class="fixed inset-0 z-40 hidden md:hidden" onclick="closeSidebar()"></div>
+        <!-- Sidebar + Header -->
+        <div class="flex min-h-screen">
+
+            <!-- Sidebar -->
+            <aside id="sidebar"
+                class="fixed top-0 left-0 h-full w-64 bg-white  p-4 transform -translate-x-full transition-transform duration-300 z-50 md:relative md:translate-x-0 md:block">
+                <!-- Close Button (small screen only) -->
+                <button class="md:hidden mb-4" onclick="closeSidebar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="mb-8">
+                    <img src="../images/logo.png" alt="HFALL Logo" class="h-10" />
+                </div>
+                <ul class=" ">
+                    <a class="hover:bg-gray-100 rounded" href="index.html">
+                        <li class="text-base flex items-center py-2 hover:bg-gray-100 rounded">
+                            <img class="w-4 h-4 mr-1" src="../images/dashboard.png" alt="">
+                            Dashboard
+                        </li>
+                    </a>
+                    <a class="py-2 hover:bg-gray-100 rounded" href="profile.html">
+                        <li class="text-base flex items-center py-2 hover:bg-gray-100 rounded">
+                            <img class="w-4 h-4 mr-1" src="../images/profile.png" alt="">
+                            Profile
+                        </li>
+                    </a>
+                    <a class="py-2 hover:bg-gray-100 rounded" href="manage_properties.html">
+                        <li class="text-base flex items-center py-2 hover:bg-gray-100 rounded">
+                            <img class="w-4 h-4 mr-1" src="../images/manage.png" alt="">
+                            Manage Properties
+                        </li>
+                    </a>
+                    <!-- nested  -->
+                    <!-- Sidebar Menu Item Example -->
+                    <li class="text-base">
+                        <button onclick="toggleDropdown(this)"
+                            class="w-full flex items-center justify-between py-2 hover:bg-gray-100 rounded">
+                            <div class="flex items-center">
+                                <img class="w-4 h-4 mr-2" src="../images/Finance.png" alt="">
+                                <span>Finance</span>
+                            </div>
+                            <svg class="w-4 h-4 transform transition-transform duration-200 dropdown-arrow" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown -->
+                        <ul class="mt-2 ml-6 space-y-2 hidden dropdown-menu">
+                            <li><a href="all_members_payment.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="../images/all_members_payments.png" alt="">
+                                    All Members Payments</a>
+                            </li>
+                            <li><a href="pending_payments.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="../images/pending.png" alt="">
+                                    Pending Payments</a>
+                            </li>
+                            <li><a href="my_expenses.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="../images/expenses.png" alt="">
+                                    My Expenses</a>
+                            </li>
+                            <li><a href="my_payments.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="../images/payments.png" alt="">
+                                    My Payments</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- nested  -->
+                    <!-- Sidebar Menu Item Example -->
+                    <li class="text-base">
+                        <button onclick="toggleDropdown(this)"
+                            class="w-full flex items-center justify-between py-2 hover:bg-gray-100 rounded">
+                            <div class="flex items-center">
+                                <img class="w-4 h-4 mr-2" src="../images/Finance.png" alt="">
+                                <span>Agreement</span>
+                            </div>
+                            <svg class="w-4 h-4 transform transition-transform duration-200 dropdown-arrow" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown -->
+                        <ul class="mt-2 ml-6 space-y-2 hidden dropdown-menu">
+                            <li><a href="upload_agreement.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="../images/upload_agreement.png" alt="">
+                                    Upload Agreement</a>
+                            </li>
+                            <li><a href="user_agreement_list.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="../images/pending.png" alt="">
+                                    User Agreement List</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <!-- nested  -->
+                    <!-- Sidebar Menu Item Example -->
+                    <li class="text-base">
+                        <button onclick="toggleDropdown(this)"
+                            class="w-full flex items-center justify-between py-2 hover:bg-gray-100 rounded">
+                            <div class="flex items-center">
+                                <img class="w-4 h-4 mr-2" src="../images/meeting.png" alt="">
+                                <span>Meeting Options</span>
+                            </div>
+                            <svg class="w-4 h-4 transform transition-transform duration-200 dropdown-arrow" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown -->
+                        <ul class="mt-2 ml-6 space-y-2 hidden dropdown-menu">
+                            <li><a href="meeting_schedule.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="../images/meeting_schedule.png" alt="">
+                                    Meeting Schedule</a>
+                            </li>
+                            <li><a href="view_calendar.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="../images/view_calendar.png" alt="">
+                                    View Calendar</a>
+                            </li>
+                            <li><a href="meeting_recording.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="../images/meeting_recording.png" alt="">
+                                    Meeting Recording</a>
+                            </li>
+                            <li><a href="meeting_upload.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="../images/upload_agreement.png" alt="">
+                                    Meeting Upload</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <a class="py-2 hover:bg-gray-100 rounded" href="members.html">
+                        <li class="text-base flex items-center py-2 hover:bg-gray-100 rounded">
+                            <img class="w-4 h-4 mr-1" src="../images/member.png" alt="">
+                            Members
+                        </li>
+                    </a>
+                    <a class="py-2 hover:bg-gray-100 rounded" href="all_members.html">
+                        <li class="text-base flex items-center py-2 hover:bg-gray-100 rounded">
+                            <img class="w-4 h-4 mr-1" src="../images/all_members.png" alt="">
+                            All Members
+                        </li>
+                    </a>
+                    <a class="py-2 hover:bg-gray-100 rounded" href="create_announcement.html">
+                        <li class="text-base flex items-center py-2 hover:bg-gray-100 rounded">
+                            <img class="w-4 h-4 mr-1" src="../images/create_announcement.png" alt="">
+                            Create Announcement
+                        </li>
+                    </a>
+                    <a class="py-2 hover:bg-gray-100 rounded" href="">
+                        <li class="text-base flex items-center py-2 hover:bg-gray-100 rounded">
+                            <img class="w-4 h-4 mr-1" src="../images/contact_Us.png" alt="">
+                            Contact Us
+                        </li>
+                    </a>
+                    <a class="py-2 hover:bg-gray-100 rounded" href="">
+                        <li class="text-base flex items-center py-2 hover:bg-gray-100 rounded">
+                            <img class="w-4 h-4 mr-1" src="../images/events_video.png" alt="">
+                            Events Video
+                        </li>
+                    </a>
+                    <a class="py-2 hover:bg-gray-100 rounded" href="">
+                        <li class="text-base flex items-center py-2 hover:bg-gray-100 rounded">
+                            <img class="w-4 h-4 mr-1" src="../images/contact_Wyth_Myth.png" alt="">
+                            Contact Wyth Myth
+                        </li>
+                    </a>
+
+
+                </ul>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="flex-1 ">
+                <div
+                    class="flex flex-col md:flex-row justify-between rounded-lg items-start md:items-center gap-4 bg-white px-4 py-6">
+                    <div>
+                        <h1 class="text-lg font-semibold">
+                            <span class="text-gray-500 text-base">Welcome,</span><br>
+                            <span class="text-2xl">Rimon Mridha</span>
+                        </h1>
+                    </div>
+                    <div>
+                        <p class="text-base">
+                            Total Investment:
+                            <span class="text-white px-4 py-2 rounded-lg ml-3 bg-[#183665] font-bold">- $1922.00</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- content -->
+                <div class="bg-white rounded-xl shadow p-6 mt-5 mx-4">
+                    <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-3 mb-4">
+                        <h2 class="text-2xl font-bold">Create Announcement</h2>
+
+
+                    </div>
+                    <hr class="mb-5 px-5 border-gray-200">
+
+
+                    <div class=" mx-auto bg-white p-6 rounded-xl shadow-md space-y-4">
+                        <!-- Text Input -->
+                        <div>
+                            <label for="title" class="block text-sm font-medium text-gray-700 mb-1">Title</label>
+                            <input type="text" id="title"
+                                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+                                placeholder="Enter title">
+                        </div>
+
+                        <!-- Textarea -->
+                        <div>
+                            <label for="description"
+                                class="block text-sm font-medium text-gray-700 mb-1">Description</label>
+                            <textarea id="description" rows="4"
+                                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+                                placeholder="Write your description..."></textarea>
+                        </div>
+                        <div class="flex flex-col sm:flex-row justify-center items-center sm:items-center gap-3 mb-4">
+
+
+                            <div class="flex flex-row gap-2 my-4">
+                                <button class="bg-[#183665] w-56  font-bold text-white py-2 px-4 rounded ">
+                                    Send Announcement
+                                </button>
+                                <button
+                                    class="bg-[#E6EAEF] w-56  text-[#183665] font-bold py-2 px-4 rounded  transition-all">
+                                    Cancel
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <!-- Footer -->
+
+                <footer class="text-center my-4 m-5 rounded-lg bg-white p-10 text-gray-500 text-xs ">
+                    <hr class="mb-4 w-8/12 mx-auto">
+                    © 2025 Hfall Realty. All Rights Reserved. Designed & Developed by <span
+                        class="font-semibold text-[#183665]">Wyth Myth</span>
+                </footer>
+            </main>
+
+        </div>
+    </div>
+
+    <script>
+        // navigation nested  
+
+        function toggleDropdown(button) {
+            const parentLi = button.closest('li');
+            const dropdown = parentLi.querySelector('.dropdown-menu');
+            const arrow = parentLi.querySelector('.dropdown-arrow');
+
+            dropdown.classList.toggle('hidden');
+            arrow.classList.toggle('rotate-180');
+        }
+
+        // for toggole menu 
+
+        const sidebar = document.getElementById('sidebar');
+        const backdrop = document.getElementById('sidebar-backdrop');
+
+        function toggleSidebar() {
+            sidebar.classList.remove('-translate-x-full');
+            backdrop.classList.remove('hidden');
+        }
+
+        function closeSidebar() {
+            sidebar.classList.add('-translate-x-full');
+            backdrop.classList.add('hidden');
+        }
+
+    </script>
+</body>
+
+</html>
