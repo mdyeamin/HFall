@@ -118,7 +118,8 @@
 
                         <!-- Dropdown -->
                         <ul class="mt-2 ml-6 space-y-2 hidden dropdown-menu">
-                            <li><a href="upload_agreement.html" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="upload_agreement.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/upload_agreement.png" alt="">
                                     Upload Agreement</a>
                             </li>
@@ -208,9 +209,9 @@
             </aside>
 
             <!-- Main Content -->
-            <main class="flex-1 p-4">
+            <main class="flex-1 ">
                 <div
-                    class="flex flex-col md:flex-row justify-between my-4 rounded-lg items-start md:items-center gap-4 bg-white px-4 py-6">
+                    class="flex flex-col md:flex-row justify-between rounded-lg items-start md:items-center gap-4 bg-white px-4 py-6">
                     <div>
                         <h1 class="text-lg font-semibold">
                             <span class="text-gray-500 text-base">Welcome,</span><br>
@@ -225,216 +226,40 @@
                     </div>
                 </div>
 
+                <!-- content -->
+                <div class="bg-white m-5 rounded-lg p-4  ">
+                    <h1 class="text-2xl font-bold">Upload a New Agreement</h1>
+                    <hr class="my-4 border-gray-300">
 
-                <div class="flex-1">
+                    <div class="p-6 bg-white rounded-lg shadow-md  mx-auto">
+                        <label class="block text-gray-700 font-medium mb-3">Select Agreement File</label>
 
-                    <!-- Top Section -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- File Upload Input -->
+                        <input type="file" id="agreementFile" class="block w-full text-sm text-gray-600 file:mr-4 file:py-2 file:px-4 
+                                        file:rounded-md file:border-0 
+                                        file:text-sm file:font-medium
+                                        file:bg-gray-100 file:text-gray-700
+                                        hover:file:bg-gray-200 cursor-pointer" />
 
-                        <!-- Profile Details Card -->
-                        <div class="col-span-2 bg-white shadow rounded-lg overflow-hidden">
-                            <!-- Header -->
-                            <div class="bg-[#183665] text-white px-4 py-2 flex items-center justify-between">
-                                <h2 class="text-lg font-bold">Profile details</h2>
-                                <div class="flex space-x-3">
-                                    <button class="hover:text-gray-200"><i class="fa-solid fa-download"></i></button>
-                                    <button class="hover:text-gray-200"><i class="fa-solid fa-pen"></i></button>
-                                    <button class="hover:text-gray-200"><i class="fa-solid fa-user"></i></button>
-                                </div>
-                            </div>
+                        <!-- Buttons Center Aligned -->
+                        <div class="flex justify-center space-x-4 mt-6">
+                            <button class="px-6 py-2 bg-[#183665] text-white rounded-md  transition">
+                                Upload Agreement
+                            </button>
 
-                            <!-- Table Content -->
-                            <div class="p-4 overflow-x-auto">
-                                <table class="w-full text-lg border-collapse">
-                                    <tbody class="divide-y divide-gray-300">
-                                        <tr>
-                                            <td class="py-2 font-semibold text-gray-600 text-left">Full Name</td>
-                                            <td class="py-2 text-right">Rimon Mridha</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-2 font-semibold text-gray-600 text-left">Member ID</td>
-                                            <td class="py-2 text-right">MEM2505135618</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-2 font-semibold text-gray-600 text-left">Email</td>
-                                            <td class="py-2 text-right">admin@gmail.com</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-2 font-semibold text-gray-600 text-left">Phone Number</td>
-                                            <td class="py-2 text-right">+8801745312787</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-2 font-semibold text-gray-600 text-left">Address</td>
-                                            <td class="py-2 text-right">this is address</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-2 font-semibold text-gray-600 text-left">Date Of Birth</td>
-                                            <td class="py-2 text-right">Not provided</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-2 font-semibold text-gray-600 text-left">Emergency Contact
-                                            </td>
-                                            <td class="py-2 text-right">Not provided</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-2 font-semibold text-gray-600 text-left">Know Us</td>
-                                            <td class="py-2 text-right">Not provided</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-2 font-semibold text-gray-600 text-left">Signature</td>
-                                            <td class="py-2 text-right">Not provided</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-
-
-
-                        <!-- Profile Image & Balance -->
-                        <div class="bg-white shadow rounded-lg p-6 flex flex-col items-center">
-                            <!-- Profile Image -->
-                            <img src="../images/profile-img.png" alt="Profile" class="w-40 h-40 rounded-full my-8">
-
-                            <!-- Balance + Status -->
-                            <div class="w-full flex items-center justify-between mb-3">
-                                <div>
-                                    <p class="text-sm font-semibold">Total Balance: $400</p>
-                                    <p class="text-sm font-semibold">Total Investment: $500</p>
-                                </div>
-                                <span class="bg-green-100 text-green-700 text-sm px-2 py-1 rounded">Status:
-                                    Active</span>
-                            </div>
-
-                            <!-- Member ID -->
-                            <div class="w-full">
-                                <p class="bg-[#183665] text-white text-center rounded-md py-2 font-semibold">
-                                    MEM2505135618
-                                </p>
-                            </div>
-
-                            <!-- Roles -->
-                            <div class="flex gap-1 mt-4  justify-center">
-                                <span class="bg-gray-200 px-2 py-1 rounded text-sm font-semibold">Staff</span>
-                                <span class="bg-gray-200 px-2 py-1 rounded text-sm font-semibold">Superuser</span>
-                                <span class="bg-gray-200 px-2 py-1 rounded text-sm font-semibold">Investor</span>
-                                <span class="bg-gray-200 px-2 py-1 rounded text-sm font-semibold">Financial</span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- Cards Section -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-
-                        <!-- System Agreements Card -->
-                        <div>
-                            <h3 class="text-md font-bold mb-2">System Agreements</h3>
-                            <div class="bg-white shadow rounded-lg p-6 flex flex-col items-center text-center">
-                                <h2 class="text-base font-bold mb-4">Upload Document</h2>
-                                <input type="file" id="file1" class="hidden" />
-                                <label for="file1"
-                                    class="bg-gray-100 px-2 py-1  rounded cursor-pointer hover:bg-gray-200">
-                                    Upload File
-                                </label>
-                                <p class="text-sm text-gray-500 mt-2">Uploaded: May 27, 2025</p>
-                                <button
-                                    class="bg-[#183665] text-white mt-3 px-4 py-2 w-full rounded hover:bg-[#152c52]">
-                                    Open Document
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- Uploaded Agreements Card -->
-                        <div>
-                            <h3 class="text-md font-bold mb-2">Uploaded Agreements (5)</h3>
-                            <div class="bg-white shadow rounded-lg p-6 flex flex-col items-center text-center">
-                                <h2 class="text-base font-bold mb-4">Upload Document</h2>
-                                <input type="file" id="file1" class="hidden" />
-                                <label for="file1"
-                                    class="bg-gray-100 px-2 py-1  rounded cursor-pointer hover:bg-gray-200">
-                                    Upload File
-                                </label>
-                                <p class="text-sm text-gray-500 mt-2">Uploaded: May 27, 2025</p>
-                                <button
-                                    class="bg-[#183665] text-white mt-3 px-4 py-2 w-full rounded hover:bg-[#152c52]">
-                                    Open Document
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- Another Card -->
-                        <div>
-                            <h3 class="text-md font-bold mb-2">System Agreements</h3>
-                            <div class="bg-white shadow rounded-lg p-6 flex flex-col items-center text-center">
-                                <h2 class="text-base font-bold mb-4">Upload Document</h2>
-                                <input type="file" id="file1" class="hidden" />
-                                <label for="file1"
-                                    class="bg-gray-100 px-2 py-1  rounded cursor-pointer hover:bg-gray-200">
-                                    Upload File
-                                </label>
-                                <p class="text-sm text-gray-500 mt-2">Uploaded: May 27, 2025</p>
-                                <button
-                                    class="bg-[#183665] text-white mt-3 px-4 py-2 w-full rounded hover:bg-[#152c52]">
-                                    Open Document
-                                </button>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- Payment History Table -->
-                    <div class="bg-white shadow rounded-lg p-6 mt-6">
-                        <h3 class="text-md font-bold mb-4">Payment History</h3>
-                        <div class="overflow-x-auto">
-                            <table class="w-full text-center border-collapse">
-                                <thead class="bg-gray-100">
-                                    <tr>
-                                        <th class="p-2">Date</th>
-                                        <th class="p-2">Bank</th>
-                                        <th class="p-2">Amount</th>
-                                        <th class="p-2">Paid Amount</th>
-                                        <th class="p-2">Approved By</th>
-                                        <th class="p-2">Receipt</th>
-                                        <th class="p-2">Notes</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="p-2 border border-gray-100">May 14, 2025</td>
-                                        <td class="p-2 border border-gray-100">Stripe</td>
-                                        <td class="p-2 border border-gray-100">$100.00</td>
-                                        <td class="p-2 border border-gray-100">$100.00</td>
-                                        <td class="p-2 border border-gray-100">Hasibul Hasan</td>
-                                        <td class="p-2 border border-gray-100">
-                                            <span class="bg-gray-200 px-3 py-1 rounded text-sm">Receipt</span>
-                                        </td>
-                                        <td class="p-2 border border-gray-100">Stripe payment</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="p-2 border border-gray-100">May 14, 2025</td>
-                                        <td class="p-2 border border-gray-100">Stripe</td>
-                                        <td class="p-2 border border-gray-100">$100.00</td>
-                                        <td class="p-2 border border-gray-100">$100.00</td>
-                                        <td class="p-2 border border-gray-100">Hasibul Hasan</td>
-                                        <td class="p-2 border border-gray-100">
-                                            <span class="bg-gray-200 px-3 py-1 rounded text-sm">Receipt</span>
-                                        </td>
-                                        <td class="p-2 border border-gray-100">Stripe payment</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <button class="px-6 py-2 bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 transition">
+                                Cancel
+                            </button>
                         </div>
                     </div>
+
+
 
                 </div>
 
                 <!-- Footer -->
 
-                <footer class="text-center my-4 rounded-lg bg-white p-10 text-gray-500 text-xs ">
+                <footer class="text-center my-4 m-5 rounded-lg bg-white p-10 text-gray-500 text-xs ">
                     <hr class="mb-4 w-8/12 mx-auto">
                     © 2025 Hfall Realty. All Rights Reserved. Designed & Developed by <span
                         class="font-semibold text-[#183665]">Wyth Myth</span>
