@@ -226,167 +226,212 @@
                 </div>
 
 
-                <div class="bg-white rounded-xl shadow p-6">
-                    <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-3 mb-4">
-                        <h2 class="text-2xl font-bold">Payments Awaiting Approval</h2>
+                <div class="flex-1">
 
-                        <!-- <div class="flex flex-row gap-2">
-                            <button class="bg-[#183665]  font-bold text-white py-2 px-4 rounded ">
-                                Total = $5,000
-                            </button>
-                            <button class="bg-[#E6EAEF]  text-[#183665] font-bold py-2 px-4 rounded  transition-all">
-                                Make New Payment
-                            </button>
-                        </div> -->
-                    </div>
-                    <hr class="mb-5 px-5 border-gray-200">
+                    <!-- Top Section -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-                    <!-- Filter -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 mb-4">
+                        <!-- Profile Details Card -->
+                        <div class="col-span-2 bg-white shadow rounded-lg overflow-hidden">
+                            <!-- Header -->
+                            <div class="bg-[#183665] text-white px-4 py-2 flex items-center justify-between">
+                                <h2 class="text-lg font-bold">Profile details</h2>
+                                <div class="flex space-x-3">
+                                    <button class="hover:text-gray-200"><i class="fa-solid fa-download"></i></button>
+                                    <button class="hover:text-gray-200"><i class="fa-solid fa-pen"></i></button>
+                                    <button class="hover:text-gray-200"><i class="fa-solid fa-user"></i></button>
+                                </div>
+                            </div>
 
-
-
-                        <!-- Select Status -->
-                        <div>
-                            <label class="block font-medium mb-1">User</label>
-                            <select class="border px-3 py-2 rounded w-full">
-                                <option>Select User</option>
-                            </select>
+                            <!-- Table Content -->
+                            <div class="p-4 overflow-x-auto">
+                                <table class="w-full text-lg border-collapse">
+                                    <tbody class="divide-y divide-gray-300">
+                                        <tr>
+                                            <td class="py-2 font-semibold text-gray-600 text-left">Full Name</td>
+                                            <td class="py-2 text-right">Rimon Mridha</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-2 font-semibold text-gray-600 text-left">Member ID</td>
+                                            <td class="py-2 text-right">MEM2505135618</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-2 font-semibold text-gray-600 text-left">Email</td>
+                                            <td class="py-2 text-right">admin@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-2 font-semibold text-gray-600 text-left">Phone Number</td>
+                                            <td class="py-2 text-right">+8801745312787</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-2 font-semibold text-gray-600 text-left">Address</td>
+                                            <td class="py-2 text-right">this is address</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-2 font-semibold text-gray-600 text-left">Date Of Birth</td>
+                                            <td class="py-2 text-right">Not provided</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-2 font-semibold text-gray-600 text-left">Emergency Contact
+                                            </td>
+                                            <td class="py-2 text-right">Not provided</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-2 font-semibold text-gray-600 text-left">Know Us</td>
+                                            <td class="py-2 text-right">Not provided</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-2 font-semibold text-gray-600 text-left">Signature</td>
+                                            <td class="py-2 text-right">Not provided</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
 
-                        <!-- Select User -->
-                        <div>
-                            <label class="block font-medium mb-1">Bank</label>
-                            <select class="border px-3 py-2 rounded w-full">
-                                <option>Select Bank</option>
-                            </select>
+
+
+
+                        <!-- Profile Image & Balance -->
+                        <div class="bg-white shadow rounded-lg p-6 flex flex-col items-center">
+                            <!-- Profile Image -->
+                            <img src="../images/profile-img.png" alt="Profile" class="w-40 h-40 rounded-full my-8">
+
+                            <!-- Balance + Status -->
+                            <div class="w-full flex items-center justify-between mb-3">
+                                <div>
+                                    <p class="text-sm font-semibold">Total Balance: $400</p>
+                                    <p class="text-sm font-semibold">Total Investment: $500</p>
+                                </div>
+                                <span class="bg-green-100 text-green-700 text-sm px-2 py-1 rounded">Status:
+                                    Active</span>
+                            </div>
+
+                            <!-- Member ID -->
+                            <div class="w-full">
+                                <p class="bg-[#183665] text-white text-center rounded-md py-2 font-semibold">
+                                    MEM2505135618
+                                </p>
+                            </div>
+
+                            <!-- Roles -->
+                            <div class="flex gap-1 mt-4  justify-center">
+                                <span class="bg-gray-200 px-2 py-1 rounded text-sm font-semibold">Staff</span>
+                                <span class="bg-gray-200 px-2 py-1 rounded text-sm font-semibold">Superuser</span>
+                                <span class="bg-gray-200 px-2 py-1 rounded text-sm font-semibold">Investor</span>
+                                <span class="bg-gray-200 px-2 py-1 rounded text-sm font-semibold">Financial</span>
+                            </div>
                         </div>
 
-                        <!-- Start Date -->
-                        <div>
-                            <label class="block font-medium mb-1">From Date</label>
-                            <input type="date" class="border px-3 py-2 rounded w-full">
-                        </div>
-
-                        <!-- End Date -->
-                        <div>
-                            <label class="block font-medium mb-1">To Date</label>
-                            <input type="date" class="border px-3 py-2 rounded w-full">
-                        </div>
-
-                        <!-- Search Button -->
-                        <div class="flex items-end">
-                            <button class="bg-[#183665] text-white py-2 px-4 rounded w-full">
-                                Filter
-                            </button>
-                        </div>
-
-                    </div>
-
-
-
-
-
-                    <!-- Table -->
-                    <!-- Only adds horizontal scroll on small screens (md and down) -->
-                    <!-- Scrollable Table Wrapper -->
-                    <div
-                        class="w-full overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
-                        <table class="min-w-[800px] w-full text-left text-sm">
-                            <thead class="bg-gray-100 font-semibold">
-                                <tr>
-                                    <th class="p-2 text-center">Data</th>
-                                    <th class="p-2 text-center">User</th>
-                                    <th class="p-2 text-center">Bank</th>
-                                    <th class="p-2 text-center">Amount</th>
-                                    <th class="p-2 text-center">Paid Amount</th>
-                                    <th class="p-2 text-center">Status</th>
-                                    <th class="p-2 text-center">Action</th>
-
-                                </tr>
-                            </thead>
-                            <tbody class="">
-                                <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">May 14, 2025</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">admin@gmail.com</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">Stripe</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">$1000.00</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">$800.00</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center text-green-600">Approved</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center ">
-                                        <button class="bg-gray-200 justify-center px-4 py-1 rounded">Review</button>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">May 14, 2025</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">admin@gmail.com</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">Stripe</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">$1000.00</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">$800.00</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center text-green-600">Approved</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center ">
-                                        <button class="bg-gray-200 justify-center px-4 py-1 rounded">Review</button>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">May 14, 2025</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">admin@gmail.com</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">Stripe</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">$1000.00</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">$800.00</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center text-green-600">Approved</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center ">
-                                        <button class="bg-gray-200 justify-center px-4 py-1 rounded">Review</button>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">May 14, 2025</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">admin@gmail.com</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">Stripe</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">$1000.00</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">$800.00</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center text-green-600">Approved</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center ">
-                                        <button class="bg-gray-200 justify-center px-4 py-1 rounded">Review</button>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">May 14, 2025</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">admin@gmail.com</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">Stripe</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">$1000.00</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">$800.00</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center text-green-600">Approved</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center ">
-                                        <button class="bg-gray-200 justify-center px-4 py-1 rounded">Review</button>
-                                    </td>
-                                </tr>
-
-
-
-                                <!-- More rows -->
-                            </tbody>
-                        </table>
                     </div>
 
-                    <!-- Pagination -->
-                    <div class="flex flex-col sm:flex-row sm:justify-between items-start sm:items-center mt-4 gap-2">
-                        <p class="text-sm text-gray-500">Showing 01 of 20 Result</p>
-                        <div class="flex gap-2">
-                            <button class="px-2 py-1 border rounded">← Previous </button>
-                            <button class="px-2 py-1 border rounded">1</button>
-                            <button class="px-2 py-1 border rounded">2</button>
-                            <button class="px-2 py-1 border rounded">3</button>
-                            <button class="px-2 py-1 border rounded">Next →</button>
+                    <!-- Cards Section -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+
+                        <!-- System Agreements Card -->
+                        <div>
+                            <h3 class="text-md font-bold mb-2">System Agreements</h3>
+                            <div class="bg-white shadow rounded-lg p-6 flex flex-col items-center text-center">
+                                <h2 class="text-base font-bold mb-4">Upload Document</h2>
+                                <input type="file" id="file1" class="hidden" />
+                                <label for="file1"
+                                    class="bg-gray-100 px-2 py-1  rounded cursor-pointer hover:bg-gray-200">
+                                    Upload File
+                                </label>
+                                <p class="text-sm text-gray-500 mt-2">Uploaded: May 27, 2025</p>
+                                <button
+                                    class="bg-[#183665] text-white mt-3 px-4 py-2 w-full rounded hover:bg-[#152c52]">
+                                    Open Document
+                                </button>
+                            </div>
                         </div>
+
+                        <!-- Uploaded Agreements Card -->
+                        <div>
+                            <h3 class="text-md font-bold mb-2">Uploaded Agreements (5)</h3>
+                            <div class="bg-white shadow rounded-lg p-6 flex flex-col items-center text-center">
+                                <h2 class="text-base font-bold mb-4">Upload Document</h2>
+                                <input type="file" id="file1" class="hidden" />
+                                <label for="file1"
+                                    class="bg-gray-100 px-2 py-1  rounded cursor-pointer hover:bg-gray-200">
+                                    Upload File
+                                </label>
+                                <p class="text-sm text-gray-500 mt-2">Uploaded: May 27, 2025</p>
+                                <button
+                                    class="bg-[#183665] text-white mt-3 px-4 py-2 w-full rounded hover:bg-[#152c52]">
+                                    Open Document
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Another Card -->
+                        <div>
+                            <h3 class="text-md font-bold mb-2">System Agreements</h3>
+                            <div class="bg-white shadow rounded-lg p-6 flex flex-col items-center text-center">
+                                <h2 class="text-base font-bold mb-4">Upload Document</h2>
+                                <input type="file" id="file1" class="hidden" />
+                                <label for="file1"
+                                    class="bg-gray-100 px-2 py-1  rounded cursor-pointer hover:bg-gray-200">
+                                    Upload File
+                                </label>
+                                <p class="text-sm text-gray-500 mt-2">Uploaded: May 27, 2025</p>
+                                <button
+                                    class="bg-[#183665] text-white mt-3 px-4 py-2 w-full rounded hover:bg-[#152c52]">
+                                    Open Document
+                                </button>
+                            </div>
+                        </div>
+
                     </div>
 
+
+
+                    <!-- Payment History Table -->
+                    <div class="bg-white shadow rounded-lg p-6 mt-6">
+                        <h3 class="text-md font-bold mb-4">Payment History</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-center border-collapse">
+                                <thead class="bg-gray-100">
+                                    <tr>
+                                        <th class="p-2">Date</th>
+                                        <th class="p-2">Bank</th>
+                                        <th class="p-2">Amount</th>
+                                        <th class="p-2">Paid Amount</th>
+                                        <th class="p-2">Approved By</th>
+                                        <th class="p-2">Receipt</th>
+                                        <th class="p-2">Notes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="p-2 border border-gray-100">May 14, 2025</td>
+                                        <td class="p-2 border border-gray-100">Stripe</td>
+                                        <td class="p-2 border border-gray-100">$100.00</td>
+                                        <td class="p-2 border border-gray-100">$100.00</td>
+                                        <td class="p-2 border border-gray-100">Hasibul Hasan</td>
+                                        <td class="p-2 border border-gray-100">
+                                            <span class="bg-gray-200 px-3 py-1 rounded text-sm">Receipt</span>
+                                        </td>
+                                        <td class="p-2 border border-gray-100">Stripe payment</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 border border-gray-100">May 14, 2025</td>
+                                        <td class="p-2 border border-gray-100">Stripe</td>
+                                        <td class="p-2 border border-gray-100">$100.00</td>
+                                        <td class="p-2 border border-gray-100">$100.00</td>
+                                        <td class="p-2 border border-gray-100">Hasibul Hasan</td>
+                                        <td class="p-2 border border-gray-100">
+                                            <span class="bg-gray-200 px-3 py-1 rounded text-sm">Receipt</span>
+                                        </td>
+                                        <td class="p-2 border border-gray-100">Stripe payment</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
 
                 </div>
+
                 <!-- Footer -->
 
                 <footer class="text-center my-4 rounded-lg bg-white p-10 text-gray-500 text-xs ">
