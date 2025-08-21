@@ -154,11 +154,13 @@
                                     <img class="w-4 h-4 mr-1" src="../images/meeting_schedule.png" alt="">
                                     Meeting Schedule</a>
                             </li>
-                            <li><a href="view_calendar.html" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="view_calendar.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/view_calendar.png" alt="">
                                     View Calendar</a>
                             </li>
-                            <li><a href="meeting_recording.html" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="meeting_recording.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/meeting_recording.png" alt="">
                                     Meeting Recording</a>
                             </li>
@@ -229,14 +231,52 @@
                 </div>
 
                 <!-- content -->
-                <div class="bg-white rounded-xl shadow p-6 mx-4 my-5">
+                <div class="bg-white rounded-xl shadow p-6 mt-5 mx-4">
                     <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-3 mb-4">
-                        <h2 class="text-2xl font-bold">User Agreement List</h2>
+                        <h2 class="text-2xl font-bold">Recording</h2>
 
+                        <div class="flex flex-row gap-2">
+                            <button class="bg-[#183665]  font-bold text-white py-2 px-4 rounded ">
+                                Add Recording
+                            </button>
 
+                        </div>
                     </div>
                     <hr class="mb-5 px-5 border-gray-200">
 
+                    <!-- Filter -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+
+
+
+                        <!-- Select Status -->
+                        <div>
+                            <label class="block font-medium mb-1">Title</label>
+                            <input class="border px-3 py-2 rounded w-full" type="text" name="" id="">
+                        </div>
+                        <!-- Start Date -->
+                        <div>
+                            <label class="block font-medium mb-1">From Date</label>
+                            <input type="date" class="border px-3 py-2 rounded w-full">
+                        </div>
+
+                        <!-- End Date -->
+                        <div>
+                            <label class="block font-medium mb-1">To Date</label>
+                            <input type="date" class="border px-3 py-2 rounded w-full">
+                        </div>
+                        <!-- Select User -->
+                        
+
+
+                        <!-- Search Button -->
+                        <div class="flex items-end">
+                            <button class="bg-[#183665] text-white py-2 px-4 rounded w-full">
+                                Filter
+                            </button>
+                        </div>
+
+                    </div>
 
 
 
@@ -250,86 +290,133 @@
                         <table class="min-w-[800px] w-full text-left text-sm">
                             <thead class="bg-gray-100 font-semibold">
                                 <tr>
-                                    <th class="p-2 text-center">No.</th>
-                                    <th class="p-2 text-center">Agreement Uploader Name</th>
-                                    <th class="p-2 text-center">Agreement File</th>
-                                    <th class="p-2 text-center">Actions</th>
+                                    <th class="p-2 text-center">Meeting</th>
+                                    <th class="p-2 text-center">Description</th>
+                                    <th class="p-2 text-center">Meeting Date</th>
+                                    <th class="p-2 text-center">Action</th>
 
                                 </tr>
                             </thead>
                             <tbody class="">
                                 <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">01</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">HFall Realty</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">View</span>
-                                    </td>
-                                    <td class="p-2 border-3 border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">Delete</span>
+                                    <td class="p-2 border-3  border-gray-100 text-center">Weekly Team Meeting</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">July 6, 2025</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">12:00 PM - 2:00 PM</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">
+                                        <div class="flex justify-center gap-2">
+                                            <a href="">
+                                                <img class="w-5" src="../images/view.png" alt="">
+                                            </a>
+                                            <a href="">
+                                                <img class="w-5" src="../images/edit.png" alt="">
+                                            </a>
+
+                                            <a href="">
+                                                <img class="w-5" src="../images/delete.png" alt="">
+                                            </a>
+                                        </div>
                                     </td>
                                 </tr>
-
 
                                 <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">01</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">HFall Realty</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">View</span>
-                                    </td>
-                                    <td class="p-2 border-3 border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">Delete</span>
+                                    <td class="p-2 border-3  border-gray-100 text-center">Weekly Team Meeting</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">July 6, 2025</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">12:00 PM - 2:00 PM</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">
+                                        <div class="flex justify-center gap-2">
+                                            <a href="">
+                                                <img class="w-5" src="../images/view.png" alt="">
+                                            </a>
+                                            <a href="">
+                                                <img class="w-5" src="../images/edit.png" alt="">
+                                            </a>
+
+                                            <a href="">
+                                                <img class="w-5" src="../images/delete.png" alt="">
+                                            </a>
+                                        </div>
                                     </td>
                                 </tr>
-
 
                                 <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">01</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">HFall Realty</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">View</span>
-                                    </td>
-                                    <td class="p-2 border-3 border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">Delete</span>
+                                    <td class="p-2 border-3  border-gray-100 text-center">Weekly Team Meeting</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">July 6, 2025</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">12:00 PM - 2:00 PM</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">
+                                        <div class="flex justify-center gap-2">
+                                            <a href="">
+                                                <img class="w-5" src="../images/view.png" alt="">
+                                            </a>
+                                            <a href="">
+                                                <img class="w-5" src="../images/edit.png" alt="">
+                                            </a>
+
+                                            <a href="">
+                                                <img class="w-5" src="../images/delete.png" alt="">
+                                            </a>
+                                        </div>
                                     </td>
                                 </tr>
-
 
                                 <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">01</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">HFall Realty</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">View</span>
-                                    </td>
-                                    <td class="p-2 border-3 border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">Delete</span>
+                                    <td class="p-2 border-3  border-gray-100 text-center">Weekly Team Meeting</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">July 6, 2025</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">12:00 PM - 2:00 PM</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">
+                                        <div class="flex justify-center gap-2">
+                                            <a href="">
+                                                <img class="w-5" src="../images/view.png" alt="">
+                                            </a>
+                                            <a href="">
+                                                <img class="w-5" src="../images/edit.png" alt="">
+                                            </a>
+
+                                            <a href="">
+                                                <img class="w-5" src="../images/delete.png" alt="">
+                                            </a>
+                                        </div>
                                     </td>
                                 </tr>
-
 
                                 <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">01</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">HFall Realty</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">View</span>
-                                    </td>
-                                    <td class="p-2 border-3 border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">Delete</span>
+                                    <td class="p-2 border-3  border-gray-100 text-center">Weekly Team Meeting</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">July 6, 2025</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">12:00 PM - 2:00 PM</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">
+                                        <div class="flex justify-center gap-2">
+                                            <a href="">
+                                                <img class="w-5" src="../images/view.png" alt="">
+                                            </a>
+                                            <a href="">
+                                                <img class="w-5" src="../images/edit.png" alt="">
+                                            </a>
+
+                                            <a href="">
+                                                <img class="w-5" src="../images/delete.png" alt="">
+                                            </a>
+                                        </div>
                                     </td>
                                 </tr>
-
 
                                 <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">01</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">HFall Realty</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">View</span>
-                                    </td>
-                                    <td class="p-2 border-3 border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">Delete</span>
+                                    <td class="p-2 border-3  border-gray-100 text-center">Weekly Team Meeting</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">July 6, 2025</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">12:00 PM - 2:00 PM</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">
+                                        <div class="flex justify-center gap-2">
+                                            <a href="">
+                                                <img class="w-5" src="../images/view.png" alt="">
+                                            </a>
+                                            <a href="">
+                                                <img class="w-5" src="../images/edit.png" alt="">
+                                            </a>
+
+                                            <a href="">
+                                                <img class="w-5" src="../images/delete.png" alt="">
+                                            </a>
+                                        </div>
                                     </td>
                                 </tr>
-
-
 
 
 
