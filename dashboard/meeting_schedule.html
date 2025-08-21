@@ -118,11 +118,13 @@
 
                         <!-- Dropdown -->
                         <ul class="mt-2 ml-6 space-y-2 hidden dropdown-menu">
-                            <li><a href="upload_agreement.html" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="upload_agreement.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/upload_agreement.png" alt="">
                                     Upload Agreement</a>
                             </li>
-                            <li><a href="user_agreement_list.html" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="user_agreement_list.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/pending.png" alt="">
                                     User Agreement List</a>
                             </li>
@@ -209,9 +211,9 @@
             </aside>
 
             <!-- Main Content -->
-            <main class="flex-1 p-4">
+            <main class="flex-1 ">
                 <div
-                    class="flex flex-col md:flex-row justify-between my-4 rounded-lg items-start md:items-center gap-4 bg-white px-4 py-6">
+                    class="flex flex-col md:flex-row justify-between rounded-lg items-start md:items-center gap-4 bg-white px-4 py-6">
                     <div>
                         <h1 class="text-lg font-semibold">
                             <span class="text-gray-500 text-base">Welcome,</span><br>
@@ -226,19 +228,17 @@
                     </div>
                 </div>
 
-
-                <div class="bg-white rounded-xl shadow p-6">
+                <!-- content -->
+                <div class="bg-white rounded-xl shadow p-6 mt-5 mx-4">
                     <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-3 mb-4">
-                        <h2 class="text-2xl font-bold">Payments Awaiting Approval</h2>
+                        <h2 class="text-2xl font-bold">My Meetings</h2>
 
-                        <!-- <div class="flex flex-row gap-2">
+                        <div class="flex flex-row gap-2">
                             <button class="bg-[#183665]  font-bold text-white py-2 px-4 rounded ">
-                                Total = $5,000
+                                Create New Meeting
                             </button>
-                            <button class="bg-[#E6EAEF]  text-[#183665] font-bold py-2 px-4 rounded  transition-all">
-                                Make New Payment
-                            </button>
-                        </div> -->
+
+                        </div>
                     </div>
                     <hr class="mb-5 px-5 border-gray-200">
 
@@ -249,20 +249,9 @@
 
                         <!-- Select Status -->
                         <div>
-                            <label class="block font-medium mb-1">User</label>
-                            <select class="border px-3 py-2 rounded w-full">
-                                <option>Select User</option>
-                            </select>
+                            <label class="block font-medium mb-1">Title</label>
+                            <input class="border px-3 py-2 rounded w-full" type="text" name="" id="">
                         </div>
-
-                        <!-- Select User -->
-                        <div>
-                            <label class="block font-medium mb-1">Bank</label>
-                            <select class="border px-3 py-2 rounded w-full">
-                                <option>Select Bank</option>
-                            </select>
-                        </div>
-
                         <!-- Start Date -->
                         <div>
                             <label class="block font-medium mb-1">From Date</label>
@@ -274,6 +263,14 @@
                             <label class="block font-medium mb-1">To Date</label>
                             <input type="date" class="border px-3 py-2 rounded w-full">
                         </div>
+                        <!-- Select User -->
+                        <div>
+                            <label class="block font-medium mb-1">Status</label>
+                            <select class="border px-3 py-2 rounded w-full">
+                                <option>Select </option>
+                            </select>
+                        </div>
+
 
                         <!-- Search Button -->
                         <div class="flex items-end">
@@ -296,76 +293,152 @@
                         <table class="min-w-[800px] w-full text-left text-sm">
                             <thead class="bg-gray-100 font-semibold">
                                 <tr>
-                                    <th class="p-2 text-center">Data</th>
-                                    <th class="p-2 text-center">User</th>
-                                    <th class="p-2 text-center">Bank</th>
-                                    <th class="p-2 text-center">Amount</th>
-                                    <th class="p-2 text-center">Paid Amount</th>
-                                    <th class="p-2 text-center">Status</th>
+                                    <th class="p-2 text-center">Title</th>
+                                    <th class="p-2 text-center">Date</th>
+                                    <th class="p-2 text-center">Time</th>
                                     <th class="p-2 text-center">Action</th>
 
                                 </tr>
                             </thead>
                             <tbody class="">
                                 <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">May 14, 2025</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">admin@gmail.com</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">Stripe</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">$1000.00</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">$800.00</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center text-green-600">Approved</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">Weekly Team Meeting</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">July 6, 2025</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">12:00 PM - 2:00 PM</td>
                                     <td class="p-2 border-3  border-gray-100 text-center ">
-                                        <button class="bg-gray-200 justify-center px-4 py-1 rounded">Review</button>
+                                        <div class="flex justify-center gap-2">
+                                            <a href="">
+                                            <img class="w-5" src="../images/video.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img class="w-5" src="../images/edit.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img class="w-5" src="../images/copy.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img class="w-5" src="../images/delete.png" alt="">
+                                        </a>
+                                        </div>
                                     </td>
                                 </tr>
 
+                            
                                 <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">May 14, 2025</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">admin@gmail.com</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">Stripe</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">$1000.00</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">$800.00</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center text-green-600">Approved</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">Weekly Team Meeting</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">July 6, 2025</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">12:00 PM - 2:00 PM</td>
                                     <td class="p-2 border-3  border-gray-100 text-center ">
-                                        <button class="bg-gray-200 justify-center px-4 py-1 rounded">Review</button>
+                                        <div class="flex justify-center gap-2">
+                                            <a href="">
+                                            <img class="w-5" src="../images/video.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img class="w-5" src="../images/edit.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img class="w-5" src="../images/copy.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img class="w-5" src="../images/delete.png" alt="">
+                                        </a>
+                                        </div>
                                     </td>
                                 </tr>
 
+                            
                                 <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">May 14, 2025</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">admin@gmail.com</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">Stripe</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">$1000.00</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">$800.00</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center text-green-600">Approved</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">Weekly Team Meeting</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">July 6, 2025</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">12:00 PM - 2:00 PM</td>
                                     <td class="p-2 border-3  border-gray-100 text-center ">
-                                        <button class="bg-gray-200 justify-center px-4 py-1 rounded">Review</button>
+                                        <div class="flex justify-center gap-2">
+                                            <a href="">
+                                            <img class="w-5" src="../images/video.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img class="w-5" src="../images/edit.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img class="w-5" src="../images/copy.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img class="w-5" src="../images/delete.png" alt="">
+                                        </a>
+                                        </div>
                                     </td>
                                 </tr>
 
+                            
                                 <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">May 14, 2025</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">admin@gmail.com</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">Stripe</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">$1000.00</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">$800.00</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center text-green-600">Approved</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">Weekly Team Meeting</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">July 6, 2025</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">12:00 PM - 2:00 PM</td>
                                     <td class="p-2 border-3  border-gray-100 text-center ">
-                                        <button class="bg-gray-200 justify-center px-4 py-1 rounded">Review</button>
+                                        <div class="flex justify-center gap-2">
+                                            <a href="">
+                                            <img class="w-5" src="../images/video.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img class="w-5" src="../images/edit.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img class="w-5" src="../images/copy.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img class="w-5" src="../images/delete.png" alt="">
+                                        </a>
+                                        </div>
                                     </td>
                                 </tr>
 
+                            
                                 <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">May 14, 2025</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">admin@gmail.com</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">Stripe</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">$1000.00</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">$800.00</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center text-green-600">Approved</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">Weekly Team Meeting</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">July 6, 2025</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">12:00 PM - 2:00 PM</td>
                                     <td class="p-2 border-3  border-gray-100 text-center ">
-                                        <button class="bg-gray-200 justify-center px-4 py-1 rounded">Review</button>
+                                        <div class="flex justify-center gap-2">
+                                            <a href="">
+                                            <img class="w-5" src="../images/video.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img class="w-5" src="../images/edit.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img class="w-5" src="../images/copy.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img class="w-5" src="../images/delete.png" alt="">
+                                        </a>
+                                        </div>
                                     </td>
                                 </tr>
+
+                            
+                                <tr>
+                                    <td class="p-2 border-3  border-gray-100 text-center">Weekly Team Meeting</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">July 6, 2025</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">12:00 PM - 2:00 PM</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">
+                                        <div class="flex justify-center gap-2">
+                                            <a href="">
+                                            <img class="w-5" src="../images/video.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img class="w-5" src="../images/edit.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img class="w-5" src="../images/copy.png" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img class="w-5" src="../images/delete.png" alt="">
+                                        </a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            
 
 
 
@@ -388,9 +461,10 @@
 
 
                 </div>
+
                 <!-- Footer -->
 
-                <footer class="text-center my-4 rounded-lg bg-white p-10 text-gray-500 text-xs ">
+                <footer class="text-center my-4 m-5 rounded-lg bg-white p-10 text-gray-500 text-xs ">
                     <hr class="mb-4 w-8/12 mx-auto">
                     © 2025 Hfall Realty. All Rights Reserved. Designed & Developed by <span
                         class="font-semibold text-[#183665]">Wyth Myth</span>
