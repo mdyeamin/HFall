@@ -118,11 +118,13 @@
 
                         <!-- Dropdown -->
                         <ul class="mt-2 ml-6 space-y-2 hidden dropdown-menu">
-                            <li><a href="upload_agreement.html" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="upload_agreement.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/upload_agreement.png" alt="">
                                     Upload Agreement</a>
                             </li>
-                            <li><a href="user_agreement_list.html" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="user_agreement_list.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/pending.png" alt="">
                                     User Agreement List</a>
                             </li>
@@ -152,15 +154,18 @@
                                     <img class="w-4 h-4 mr-1" src="../images/meeting_schedule.png" alt="">
                                     Meeting Schedule</a>
                             </li>
-                            <li><a href="view_calendar.html" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="view_calendar.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/view_calendar.png" alt="">
                                     View Calendar</a>
                             </li>
-                            <li><a href="meeting_recording.html" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="meeting_recording.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/meeting_recording.png" alt="">
                                     Meeting Recording</a>
                             </li>
-                            <li><a href="meeting_upload.html" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="meeting_upload.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/upload_agreement.png" alt="">
                                     Meeting Upload</a>
                             </li>
@@ -209,9 +214,9 @@
             </aside>
 
             <!-- Main Content -->
-            <main class="flex-1 p-4">
+            <main class="flex-1 ">
                 <div
-                    class="flex flex-col md:flex-row justify-between my-4 rounded-lg items-start md:items-center gap-4 bg-white px-4 py-6">
+                    class="flex flex-col md:flex-row justify-between rounded-lg items-start md:items-center gap-4 bg-white px-4 py-6">
                     <div>
                         <h1 class="text-lg font-semibold">
                             <span class="text-gray-500 text-base">Welcome,</span><br>
@@ -226,149 +231,67 @@
                     </div>
                 </div>
 
-
-                <div class="bg-white rounded-xl shadow p-6">
+                <!-- content -->
+                <div class="bg-white rounded-xl shadow p-6 mt-5 mx-4">
                     <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-3 mb-4">
-                        <h2 class="text-2xl font-bold">Expenses</h2>
+                        <h2 class="text-2xl font-bold">All Member List</h2>
 
                         <div class="flex flex-row gap-2">
-                            <button class="bg-[#183665]  font-bold text-white py-2 px-4 rounded ">
-                                Create Expenses
-                            </button>
-                            <button class="bg-[#E6EAEF]  text-[#183665] font-bold py-2 px-4 rounded  transition-all">
-                                Download Excel
-                            </button>
+
+
                         </div>
                     </div>
                     <hr class="mb-5 px-5 border-gray-200">
 
-                    <!-- Filter -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 mb-4">
 
+                    <div class="p-6 bg-white rounded-lg ">
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
 
+                            <!-- Repeat this card -->
+                            <div class="overflow-hidden rounded-xl shadow-sm">
+                                <img src="../images/members.png" alt="Member" class="w-full h-auto object-cover">
+                            </div>
 
-                        <!-- Select Status -->
-                        <div>
-                            <label class="block font-medium mb-1">Status</label>
-                            <select class="border px-3 py-2 rounded w-full">
-                                <option>Select Status</option>
-                            </select>
-                        </div>
+                            <div class="overflow-hidden rounded-xl shadow-sm">
+                                <img src="../images/members.png" alt="Member" class="w-full h-auto object-cover">
+                            </div>
 
-                        <!-- Select User -->
-                        <div>
-                            <label class="block font-medium mb-1">Created By</label>
-                            <select class="border px-3 py-2 rounded w-full">
-                                <option>Select </option>
-                            </select>
-                        </div>
+                            <div class="overflow-hidden rounded-xl shadow-sm">
+                                <img src="../images/members.png" alt="Member" class="w-full h-auto object-cover">
+                            </div>
 
-                        <!-- Start Date -->
-                        <div>
-                            <label class="block font-medium mb-1">From Date</label>
-                            <input type="date" class="border px-3 py-2 rounded w-full">
-                        </div>
+                            <div class="overflow-hidden rounded-xl shadow-sm">
+                                <img src="../images/members.png" alt="Member" class="w-full h-auto object-cover">
+                            </div>
 
-                        <!-- End Date -->
-                        <div>
-                            <label class="block font-medium mb-1">To Date</label>
-                            <input type="date" class="border px-3 py-2 rounded w-full">
-                        </div>
-                        <!-- Search Button -->
-                        <div class="flex items-end">
-                            <button class="bg-[#183665] text-white py-2 px-4 rounded w-full">
-                                Filter
-                            </button>
-                        </div>
+                            <div class="overflow-hidden rounded-xl shadow-sm">
+                                <img src="../images/members.png" alt="Member" class="w-full h-auto object-cover">
+                            </div>
 
-                    </div>
+                            <div class="overflow-hidden rounded-xl shadow-sm">
+                                <img src="../images/members.png" alt="Member" class="w-full h-auto object-cover">
+                            </div>
 
+                            <div class="overflow-hidden rounded-xl shadow-sm">
+                                <img src="../images/members.png" alt="Member" class="w-full h-auto object-cover">
+                            </div>
 
+                            <div class="overflow-hidden rounded-xl shadow-sm">
+                                <img src="../images/members.png" alt="Member" class="w-full h-auto object-cover">
+                            </div>
+                            <!-- End Repeat -->
 
-
-
-                    <!-- Table -->
-                    <!-- Only adds horizontal scroll on small screens (md and down) -->
-                    <!-- Scrollable Table Wrapper -->
-                    <div
-                        class="w-full overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
-                        <table class="min-w-[800px] w-full text-left text-sm">
-                            <thead class="bg-gray-100 font-semibold">
-                                <tr>
-                                    <th class="p-2 text-center">Expenses Date</th>
-                                    <th class="p-2 text-center">Purpose</th>
-                                    <th class="p-2 text-center">Status</th>
-                                    <th class="p-2 text-center">Created By</th>
-                                    
-                                </tr>
-                            </thead>
-                            <tbody class="">
-                                <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">May 14, 2025</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">CPA payment for Registration of HFall</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center text-[#BD1C4C]">Pending</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center ">Mohammad Tofael Kabir Sharkar</td>
-                                </tr>
-                                
-                                <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">May 14, 2025</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">CPA payment for Registration of HFall</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center text-[#BD1C4C]">Pending</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center ">Mohammad Tofael Kabir Sharkar</td>
-                                </tr>
-                                
-                                <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">May 14, 2025</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">CPA payment for Registration of HFall</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center text-[#BD1C4C]">Pending</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center ">Mohammad Tofael Kabir Sharkar</td>
-                                </tr>
-                                
-                                <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">May 14, 2025</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">CPA payment for Registration of HFall</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center text-[#BD1C4C]">Pending</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center ">Mohammad Tofael Kabir Sharkar</td>
-                                </tr>
-                                
-                                <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">May 14, 2025</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">CPA payment for Registration of HFall</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center text-[#BD1C4C]">Pending</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center ">Mohammad Tofael Kabir Sharkar</td>
-                                </tr>
-                                
-                                <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">May 14, 2025</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">CPA payment for Registration of HFall</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center text-[#BD1C4C]">Pending</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center ">Mohammad Tofael Kabir Sharkar</td>
-                                </tr>
-                                
-
-
-                                <!-- More rows -->
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <!-- Pagination -->
-                    <div class="flex flex-col sm:flex-row sm:justify-between items-start sm:items-center mt-4 gap-2">
-                        <p class="text-sm text-gray-500">Showing 01 of 20 Result</p>
-                        <div class="flex gap-2">
-                            <button class="px-2 py-1 border rounded">← Previous </button>
-                            <button class="px-2 py-1 border rounded">1</button>
-                            <button class="px-2 py-1 border rounded">2</button>
-                            <button class="px-2 py-1 border rounded">3</button>
-                            <button class="px-2 py-1 border rounded">Next →</button>
                         </div>
                     </div>
+
+
 
 
                 </div>
+
                 <!-- Footer -->
 
-                <footer class="text-center my-4 rounded-lg bg-white p-10 text-gray-500 text-xs ">
+                <footer class="text-center my-4 m-5 rounded-lg bg-white p-10 text-gray-500 text-xs ">
                     <hr class="mb-4 w-8/12 mx-auto">
                     © 2025 Hfall Realty. All Rights Reserved. Designed & Developed by <span
                         class="font-semibold text-[#183665]">Wyth Myth</span>
