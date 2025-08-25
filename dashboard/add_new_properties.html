@@ -154,15 +154,18 @@
                                     <img class="w-4 h-4 mr-1" src="../images/meeting_schedule.png" alt="">
                                     Meeting Schedule</a>
                             </li>
-                            <li><a href="view_calendar.html" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="view_calendar.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/view_calendar.png" alt="">
                                     View Calendar</a>
                             </li>
-                            <li><a href="meeting_recording.html" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="meeting_recording.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/meeting_recording.png" alt="">
                                     Meeting Recording</a>
                             </li>
-                            <li><a href="meeting_upload.html" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="meeting_upload.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/upload_agreement.png" alt="">
                                     Meeting Upload</a>
                             </li>
@@ -193,7 +196,7 @@
                             Contact Us
                         </li>
                     </a>
-                   <a class="py-2 hover:bg-gray-100 rounded" href="events_video.html">
+                    <a class="py-2 hover:bg-gray-100 rounded" href="events_video.html">
                         <li class="text-base flex items-center py-2 hover:bg-gray-100 rounded">
                             <img class="w-4 h-4 mr-1" src="../images/events_video.png" alt="">
                             Events Video
@@ -229,124 +232,169 @@
                 </div>
 
                 <!-- content -->
-                <div class="bg-white rounded-xl shadow p-6 mx-4 my-5">
+                <div class="bg-white rounded-xl shadow p-6 mt-5 mx-4">
                     <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-3 mb-4">
-                        <h2 class="text-2xl font-bold">User Agreement List</h2>
+                        <h2 class="text-2xl font-bold">Add New Property</h2>
 
 
                     </div>
                     <hr class="mb-5 px-5 border-gray-200">
 
+                    <div class="max-w-5xl mx-auto   space-y-6">
+
+                        <!-- Title -->
+                        <div>
+                            <label class="block font-medium">Title</label>
+                            <input type="text" placeholder="Type.." class="w-full border rounded-md px-3 py-2" />
+                        </div>
+
+                        <!-- Description -->
+                        <div>
+                            <label class="block font-medium">Description</label>
+                            <textarea rows="3" placeholder="Type.."
+                                class="w-full border rounded-md px-3 py-2"></textarea>
+                        </div>
+
+                        <!-- Address -->
+                        <div>
+                            <label class="block font-medium">Address</label>
+                            <input type="text" placeholder="Type.." class="w-full border rounded-md px-3 py-2" />
+                        </div>
+
+                        <!-- City & State -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-medium">City</label>
+                                <input type="text" placeholder="Type.." class="w-full border rounded-md px-3 py-2" />
+                            </div>
+                            <div>
+                                <label class="block font-medium">State</label>
+                                <input type="text" placeholder="Type.." class="w-full border rounded-md px-3 py-2" />
+                            </div>
+                        </div>
+
+                        <!-- Zip Code, Bedrooms, Bathrooms -->
+                        <div class="grid grid-cols-3 gap-4">
+                            <div>
+                                <label class="block font-medium">Zip Code</label>
+                                <input type="text" placeholder="Type.." class="w-full border rounded-md px-3 py-2" />
+                            </div>
+                            <div>
+                                <label class="block font-medium">Bedrooms</label>
+                                <input type="text" placeholder="Type.." class="w-full border rounded-md px-3 py-2" />
+                            </div>
+                            <div>
+                                <label class="block font-medium">Bathrooms</label>
+                                <input type="text" placeholder="Type.." class="w-full border rounded-md px-3 py-2" />
+                            </div>
+                        </div>
+
+                        <!-- Dining Rooms & Square Feet -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-medium">Dining Rooms</label>
+                                <input type="text" placeholder="Type.." class="w-full border rounded-md px-3 py-2" />
+                            </div>
+                            <div>
+                                <label class="block font-medium">Square Feet</label>
+                                <input type="text" placeholder="Type.." class="w-full border rounded-md px-3 py-2" />
+                            </div>
+                        </div>
+
+                        <!-- Status, Auction Price, Booking Fee -->
+                        <div class="grid grid-cols-3 gap-4">
+                            <div>
+                                <label class="block font-medium">Status</label>
+                                <select class="w-full border rounded-md px-3 py-2">
+                                    <option>Select..</option>
+                                    <option>Available</option>
+                                    <option>Sold</option>
+                                    <option>Wish List</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block font-medium">Auction Price</label>
+                                <input type="text" placeholder="Type.." class="w-full border rounded-md px-3 py-2" />
+                            </div>
+                            <div>
+                                <label class="block font-medium">Booking Fee</label>
+                                <input type="text" placeholder="Type.." class="w-full border rounded-md px-3 py-2" />
+                            </div>
+                        </div>
+
+                        <!-- Estimated Price & Auction Date -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-medium">Estimated Price</label>
+                                <input type="text" placeholder="Type.." class="w-full border rounded-md px-3 py-2" />
+                            </div>
+                            <div>
+                                <label class="block font-medium">Auction Date</label>
+                                <input type="date" class="w-full border rounded-md px-3 py-2" />
+                            </div>
+                        </div>
+
+                        <!-- URL -->
+                        <div>
+                            <label class="block font-medium">URL</label>
+                            <input type="text" placeholder="Type.." class="w-full border rounded-md px-3 py-2" />
+                        </div>
+
+                        <!-- Images -->
+                        <div class="grid grid-cols-3 gap-6">
+                            <!-- Image 1 -->
+                            <div class="flex flex-col">
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Image 1</label>
+                                <input type="file" class="block w-full text-sm text-gray-600 
+             file:mr-4 file:py-2 file:px-4 
+             file:rounded-md file:border-0 
+             file:text-sm file:font-medium 
+             file:bg-gray-100 file:text-gray-700 
+             hover:file:bg-gray-200
+                rounded-md cursor-pointer" />
+                            </div>
+
+                            <!-- Image 2 -->
+                            <div class="flex flex-col">
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Image 2</label>
+                                <input type="file" class="block w-full text-sm text-gray-600 
+             file:mr-4 file:py-2 file:px-4 
+             file:rounded-md file:border-0 
+             file:text-sm file:font-medium 
+             file:bg-gray-100 file:text-gray-700 
+             hover:file:bg-gray-200
+            rounded-md cursor-pointer" />
+                            </div>
+
+                            <!-- Image 3 -->
+                            <div class="flex flex-col">
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Image 3</label>
+                                <input type="file" class="block w-full text-sm text-gray-600 
+             file:mr-4 file:py-2 file:px-4 
+             file:rounded-md file:border-0 
+             file:text-sm file:font-medium 
+             file:bg-gray-100 file:text-gray-700 
+             hover:file:bg-gray-200
+              rounded-md cursor-pointer" />
+                            </div>
+                        </div>
 
 
+                        <!-- Add More Image Button -->
+                        <div>
+                            <button class="bg-orange-100 text-orange-600 px-4 py-2 rounded-md">
+                                Add More Image
+                            </button>
+                        </div>
 
-
-
-                    <!-- Table -->
-                    <!-- Only adds horizontal scroll on small screens (md and down) -->
-                    <!-- Scrollable Table Wrapper -->
-                    <div
-                        class="w-full overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
-                        <table class="min-w-[800px] w-full text-left text-sm">
-                            <thead class="bg-gray-100 font-semibold">
-                                <tr>
-                                    <th class="p-2 text-center">No.</th>
-                                    <th class="p-2 text-center">Agreement Uploader Name</th>
-                                    <th class="p-2 text-center">Agreement File</th>
-                                    <th class="p-2 text-center">Actions</th>
-
-                                </tr>
-                            </thead>
-                            <tbody class="">
-                                <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">01</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">HFall Realty</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">View</span>
-                                    </td>
-                                    <td class="p-2 border-3 border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">Delete</span>
-                                    </td>
-                                </tr>
-
-
-                                <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">01</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">HFall Realty</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">View</span>
-                                    </td>
-                                    <td class="p-2 border-3 border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">Delete</span>
-                                    </td>
-                                </tr>
-
-
-                                <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">01</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">HFall Realty</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">View</span>
-                                    </td>
-                                    <td class="p-2 border-3 border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">Delete</span>
-                                    </td>
-                                </tr>
-
-
-                                <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">01</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">HFall Realty</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">View</span>
-                                    </td>
-                                    <td class="p-2 border-3 border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">Delete</span>
-                                    </td>
-                                </tr>
-
-
-                                <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">01</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">HFall Realty</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">View</span>
-                                    </td>
-                                    <td class="p-2 border-3 border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">Delete</span>
-                                    </td>
-                                </tr>
-
-
-                                <tr>
-                                    <td class="p-2 border-3  border-gray-100 text-center">01</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">HFall Realty</td>
-                                    <td class="p-2 border-3  border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">View</span>
-                                    </td>
-                                    <td class="p-2 border-3 border-gray-100 text-center">
-                                        <span class="bg-gray-200 px-3 py-1 rounded text-sm">Delete</span>
-                                    </td>
-                                </tr>
-
-
-
-
-
-                                <!-- More rows -->
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <!-- Pagination -->
-                    <div class="flex flex-col sm:flex-row sm:justify-between items-start sm:items-center mt-4 gap-2">
-                        <p class="text-sm text-gray-500">Showing 01 of 20 Result</p>
-                        <div class="flex gap-2">
-                            <button class="px-2 py-1 border rounded">← Previous </button>
-                            <button class="px-2 py-1 border rounded">1</button>
-                            <button class="px-2 py-1 border rounded">2</button>
-                            <button class="px-2 py-1 border rounded">3</button>
-                            <button class="px-2 py-1 border rounded">Next →</button>
+                        <!-- Save + Cancel Buttons -->
+                        <div class="flex justify-center gap-4">
+                            <button class="bg-[#183665] text-white px-6 py-2 rounded-md">
+                                Save Property
+                            </button>
+                            <button class="bg-gray-300 text-[#183665] px-6 py-2 rounded-md">
+                                Cancel
+                            </button>
                         </div>
                     </div>
 
