@@ -359,6 +359,19 @@
                         </div>
 
                         <div class="col-span-2">
+
+                             <!-- Custom Buttons (outside swiper) -->
+                                <div class="flex justify-end my-5 gap-4 mt-4">
+                                    <button
+                                        class="custom-prev flex items-center justify-center w-10 h-10 bg-white shadow text-black px-4 py-2 rounded-full">
+                                        <i class="text-xl fa-solid fa-arrow-left"></i>
+                                    </button>
+                                    <button
+                                        class="custom-next flex items-center justify-center w-10 h-10 bg-white shadow text-black px-4 py-2 rounded-full">
+                                        <i class="text-xl fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+
                             <!-- Example Slider 1 -->
                             <div class="swiper mySwiper" data-slides="2">
                                 <div class="swiper-wrapper">
@@ -418,9 +431,8 @@
                                     </div>
 
                                 </div>
-                                <div class="swiper-pagination"></div>
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
+                                <!-- <div class="swiper-pagination"></div> -->
+                               
                             </div>
 
                             <!-- Example Slider 2
@@ -548,6 +560,32 @@
                         prevEl: slider.querySelector(".swiper-button-prev"),
                     },
                 });
+            });
+        });
+
+
+        // custom navigation buttons for next prev 
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".mySwiper").forEach((slider, i) => {
+                let slidesPerView = parseInt(slider.dataset.slides) || 1;
+
+                // Create swiper instance
+                let swiper = new Swiper(slider, {
+                    slidesPerView: slidesPerView,
+                    spaceBetween: 20,
+                    loop: true,
+                    pagination: {
+                        el: slider.querySelector(".swiper-pagination"),
+                        clickable: true,
+                    },
+                });
+
+                // Custom buttons (global, outside swiper)
+                const nextBtn = document.querySelectorAll(".custom-next")[i];
+                const prevBtn = document.querySelectorAll(".custom-prev")[i];
+
+                nextBtn.addEventListener("click", () => swiper.slideNext());
+                prevBtn.addEventListener("click", () => swiper.slidePrev());
             });
         });
 
