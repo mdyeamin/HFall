@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- fontawesome  -->
     <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
-    <!-- swiperjs  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>HFall</title>
 </head>
 
@@ -216,237 +214,126 @@
             </aside>
 
             <!-- Main Content -->
-            <main class="flex-1 p-4">
-                <div
-                    class="flex flex-col md:flex-row justify-between my-4 rounded-lg items-start md:items-center gap-4 bg-white px-4 py-6">
-                    <div>
-                        <h1 class="text-lg font-semibold">
-                            <span class="text-gray-500 text-base">Welcome,</span><br>
-                            <span class="text-2xl">Rimon Mridha</span>
-                        </h1>
-                    </div>
-                    <div>
-                        <p class="text-base">
-                            Total Investment:
-                            <span class="text-white px-4 py-2 rounded-lg ml-3 bg-[#183665] font-bold">- $1922.00</span>
-                        </p>
-                    </div>
+            <main class="flex-1 w-full">
+
+                <!-- Button -->
+                <div class="flex items-center justify-center">
+                    <button id="openModal" class="bg-blue-600 text-white px-4 py-2 rounded-lg">
+                        View Property Details
+                    </button>
                 </div>
 
+                <!-- Modal -->
+                <div id="myModal" class="fixed inset-0  bg-opacity-50 hidden items-center justify-center">
+                    <div class="bg-white rounded-xl shadow-lg w-[60%]  h-[90%] overflow-y-auto p-6 relative">
 
-                <div class="flex-1">
+                        <!-- Close Button -->
+                        <button id="closeModal"
+                            class="absolute top-3 right-3 bg-red-500 text-white px-3 py-1 rounded-lg">
+                            ✕
+                        </button>
 
-                    <!-- Top Section -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Content inside Modal -->
+                        <div class="space-y-6">
 
-                        <!-- Profile Details Card -->
-                        <div class="col-span-2 bg-white shadow rounded-lg overflow-hidden">
-                            <!-- Header -->
-                            <div class="bg-[#183665] text-white px-4 py-2 flex items-center justify-between">
-                                <h2 class="text-lg font-bold">Profile details</h2>
-                                <div class="flex space-x-3">
-                                    <button class="hover:text-gray-200"><i class="fa-solid fa-download"></i></button>
-                                    <button class="hover:text-gray-200"><i class="fa-solid fa-pen"></i></button>
-                                    <button class="hover:text-gray-200"><i class="fa-solid fa-user"></i></button>
+                            <!-- Back to Dashboard -->
+                            <a href="#" class="text-sm text-gray-500 flex items-center gap-1">
+                                ← Back to Dashboard
+                            </a>
+
+                            <!-- Property Images -->
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                                <img src="../images/property-1.png" class="rounded-lg object-cover row-span-2 col-span-2" />
+                                <img src="../images/property-2.png" class="rounded-lg object-cover" />
+                                <img src="../images/property-3.png" class="rounded-lg object-cover" />
+                                <img src="../images/property-4.png" class="rounded-lg object-cover" />
+                                <img src="../images/property-5.png" class="rounded-lg object-cover " />
+                            </div>
+
+                            <!-- Title & Info -->
+                            <div>
+                                <h1 class="text-2xl font-bold">This is test</h1>
+                                <p class="text-gray-600">📍 504 N Huntsdown Ave, Dresel Hill, PA 19026</p>
+                                <p class="text-gray-500 mt-2">This is test property</p>
+                            </div>
+
+                            <!-- Features -->
+                            <div class="grid grid-cols-4 gap-4 text-center">
+                                <div>🛏 Bed Rooms <br><b>02</b></div>
+                                <div>🍽 Dining Rooms <br><b>01</b></div>
+                                <div>🛁 Bath Rooms <br><b>03</b></div>
+                                <div>📐 Sqft <br><b>1,702</b></div>
+                            </div>
+
+                            <!-- Property Details -->
+                            <div class="bg-gray-100 p-4 rounded-lg grid grid-cols-2 gap-4">
+                                <p>Auction Price: <b>400 $</b></p>
+                                <p>Estimated Price: <b>500 $</b></p>
+                                <p>Auction Date: <b>29.05.2025</b></p>
+                                <p>Booking Fee: <b>200 $</b></p>
+                                <p>Buying Price: <b>400 $</b></p>
+                                <p>Service Cost: <b>N/A</b></p>
+                                <p>Asking Price: <b>1000 $</b></p>
+                                <p>Selling Price: <b>1000 $</b></p>
+                                <p>Buying Date: <b>29.05.2025</b></p>
+                                <p>Listed Date: <b>29.05.2025</b></p>
+                            </div>
+
+                            <!-- Status Updates -->
+                            <div class="space-y-3">
+                                <div class="bg-gray-100 p-3 rounded-lg">
+                                    30.05.2025 – The house current status is "Wish List" <br>
+                                    <span class="text-sm text-gray-500">May 30, 2025 05:49 AM</span>
+                                </div>
+                                <div class="bg-gray-100 p-3 rounded-lg">
+                                    30.05.2025 – The house current status is "Wish List" <br>
+                                    <span class="text-sm text-gray-500">May 30, 2025 05:49 AM</span>
+                                </div>
+                                <div class="bg-gray-100 p-3 rounded-lg">
+                                    30.05.2025 – The house current status is "Wish List" <br>
+                                    <span class="text-sm text-gray-500">May 30, 2025 05:49 AM</span>
                                 </div>
                             </div>
 
-                            <!-- Table Content -->
-                            <div class="p-4 overflow-x-auto">
-                                <table class="w-full text-lg border-collapse">
-                                    <tbody class="divide-y divide-gray-300">
-                                        <tr>
-                                            <td class="py-2 font-semibold text-gray-600 text-left">Full Name</td>
-                                            <td class="py-2 text-right">Rimon Mridha</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-2 font-semibold text-gray-600 text-left">Member ID</td>
-                                            <td class="py-2 text-right">MEM2505135618</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-2 font-semibold text-gray-600 text-left">Email</td>
-                                            <td class="py-2 text-right">admin@gmail.com</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-2 font-semibold text-gray-600 text-left">Phone Number</td>
-                                            <td class="py-2 text-right">+8801745312787</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-2 font-semibold text-gray-600 text-left">Address</td>
-                                            <td class="py-2 text-right">this is address</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-2 font-semibold text-gray-600 text-left">Date Of Birth</td>
-                                            <td class="py-2 text-right">Not provided</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-2 font-semibold text-gray-600 text-left">Emergency Contact
-                                            </td>
-                                            <td class="py-2 text-right">Not provided</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-2 font-semibold text-gray-600 text-left">Know Us</td>
-                                            <td class="py-2 text-right">Not provided</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-2 font-semibold text-gray-600 text-left">Signature</td>
-                                            <td class="py-2 text-right">Not provided</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-
-
-
-                        <!-- Profile Image & Balance -->
-                        <div class="bg-white shadow rounded-lg p-6 flex flex-col items-center">
-                            <!-- Profile Image -->
-                            <img src="../images/profile-img.png" alt="Profile" class="w-40 h-40 rounded-full my-8">
-
-                            <!-- Balance + Status -->
-                            <div class="w-full flex items-center justify-between mb-3">
-                                <div>
-                                    <p class="text-sm font-semibold">Total Balance: $400</p>
-                                    <p class="text-sm font-semibold">Total Investment: $500</p>
-                                </div>
-                                <span class="bg-green-100 text-green-700 text-sm px-2 py-1 rounded">Status:
-                                    Active</span>
-                            </div>
-
-                            <!-- Member ID -->
-                            <div class="w-full">
-                                <p class="bg-[#183665] text-white text-center rounded-md py-2 font-semibold">
-                                    MEM2505135618
-                                </p>
-                            </div>
-
-                            <!-- Roles -->
-                            <div class="flex gap-1 mt-4  justify-center">
-                                <span class="bg-gray-200 px-2 py-1 rounded text-sm font-semibold">Staff</span>
-                                <span class="bg-gray-200 px-2 py-1 rounded text-sm font-semibold">Superuser</span>
-                                <span class="bg-gray-200 px-2 py-1 rounded text-sm font-semibold">Investor</span>
-                                <span class="bg-gray-200 px-2 py-1 rounded text-sm font-semibold">Financial</span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- Cards Section -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-
-                        <!-- System Agreements Card -->
-                        <div>
-                            <h3 class="text-md font-bold mb-2">System Agreements</h3>
-                            <!-- <div class="bg-white shadow rounded-lg p-6 flex flex-col items-center text-center">
-                                <h2 class="text-base font-bold mb-4">Upload Document</h2>
-                                <input type="file" id="file1" class="hidden" />
-                                <label for="file1"
-                                    class="bg-gray-100 px-2 py-1  rounded cursor-pointer hover:bg-gray-200">
-                                    Upload File
-                                </label>
-                                <p class="text-sm text-gray-500 mt-2">Uploaded: May 27, 2025</p>
-                                <button
-                                    class="bg-[#183665] text-white mt-3 px-4 py-2 w-full rounded hover:bg-[#152c52]">
-                                    Open Document
+                            <!-- Contact Button -->
+                            <div class="text-center">
+                                <button class="bg-orange-500 text-white px-6 py-2 rounded-lg">
+                                    Contact About This Property
                                 </button>
-                            </div> -->
-                        </div>
-
-                        <div class="col-span-2">
-                            <div class="grid grid-cols-2 gap-5">
-                                <!-- Uploaded Agreements Card -->
-                                <div>
-                                    <h3 class="text-md font-bold mb-2">Uploaded Agreements (5)</h3>
-                                    <div class="bg-white shadow rounded-lg p-6 flex flex-col items-center text-center">
-                                        <h2 class="text-base font-bold mb-4">Upload Document</h2>
-                                        <input type="file" id="file1" class="hidden" />
-                                        <label for="file1"
-                                            class="bg-gray-100 px-2 py-1  rounded cursor-pointer hover:bg-gray-200">
-                                            Upload File
-                                        </label>
-                                        <p class="text-sm text-gray-500 mt-2">Uploaded: May 27, 2025</p>
-                                        <button
-                                            class="bg-[#183665] text-white mt-3 px-4 py-2 w-full rounded hover:bg-[#152c52]">
-                                            Open Document
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <!-- Another Card -->
-                                <div>
-                                    <h3 class="text-md font-bold mb-2">System Agreements</h3>
-                                    <div class="bg-white shadow rounded-lg p-6 flex flex-col items-center text-center">
-                                        <h2 class="text-base font-bold mb-4">Upload Document</h2>
-                                        <input type="file" id="file1" class="hidden" />
-                                        <label for="file1"
-                                            class="bg-gray-100 px-2 py-1  rounded cursor-pointer hover:bg-gray-200">
-                                            Upload File
-                                        </label>
-                                        <p class="text-sm text-gray-500 mt-2">Uploaded: May 27, 2025</p>
-                                        <button
-                                            class="bg-[#183665] text-white mt-3 px-4 py-2 w-full rounded hover:bg-[#152c52]">
-                                            Open Document
-                                        </button>
-                                    </div>
-                                </div>
                             </div>
-                        </div>
 
-                    </div>
-
-
-
-                    <!-- Payment History Table -->
-                    <div class="bg-white shadow rounded-lg p-6 mt-6">
-                        <h3 class="text-md font-bold mb-4">Payment History</h3>
-                        <div class="overflow-x-auto">
-                            <table class="w-full text-center border-collapse">
-                                <thead class="bg-gray-100">
-                                    <tr>
-                                        <th class="p-2">Date</th>
-                                        <th class="p-2">Bank</th>
-                                        <th class="p-2">Amount</th>
-                                        <th class="p-2">Paid Amount</th>
-                                        <th class="p-2">Approved By</th>
-                                        <th class="p-2">Receipt</th>
-                                        <th class="p-2">Notes</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="p-2 border border-gray-100">May 14, 2025</td>
-                                        <td class="p-2 border border-gray-100">Stripe</td>
-                                        <td class="p-2 border border-gray-100">$100.00</td>
-                                        <td class="p-2 border border-gray-100">$100.00</td>
-                                        <td class="p-2 border border-gray-100">Hasibul Hasan</td>
-                                        <td class="p-2 border border-gray-100">
-                                            <span class="bg-gray-200 px-3 py-1 rounded text-sm">Receipt</span>
-                                        </td>
-                                        <td class="p-2 border border-gray-100">Stripe payment</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="p-2 border border-gray-100">May 14, 2025</td>
-                                        <td class="p-2 border border-gray-100">Stripe</td>
-                                        <td class="p-2 border border-gray-100">$100.00</td>
-                                        <td class="p-2 border border-gray-100">$100.00</td>
-                                        <td class="p-2 border border-gray-100">Hasibul Hasan</td>
-                                        <td class="p-2 border border-gray-100">
-                                            <span class="bg-gray-200 px-3 py-1 rounded text-sm">Receipt</span>
-                                        </td>
-                                        <td class="p-2 border border-gray-100">Stripe payment</td>
-                                    </tr>
-                                </tbody>
-                            </table>
                         </div>
                     </div>
-
                 </div>
+
+                <script>
+                    const openModal = document.getElementById("openModal");
+                    const closeModal = document.getElementById("closeModal");
+                    const modal = document.getElementById("myModal");
+
+                    openModal.addEventListener("click", () => {
+                        modal.classList.remove("hidden");
+                        modal.classList.add("flex");
+                    });
+
+                    closeModal.addEventListener("click", () => {
+                        modal.classList.add("hidden");
+                        modal.classList.remove("flex");
+                    });
+
+                    modal.addEventListener("click", (e) => {
+                        if (e.target === modal) {
+                            modal.classList.add("hidden");
+                            modal.classList.remove("flex");
+                        }
+                    });
+                </script>
+
+
 
                 <!-- Footer -->
 
-                <footer class="text-center my-4 rounded-lg bg-white p-10 text-gray-500 text-xs ">
+                <footer class="text-center my-4 m-5 rounded-lg bg-white p-10 text-gray-500 text-xs ">
                     <hr class="mb-4 w-8/12 mx-auto">
                     © 2025 Hfall Realty. All Rights Reserved. Designed & Developed by <span
                         class="font-semibold text-[#183665]">Wyth Myth</span>
@@ -482,11 +369,12 @@
             sidebar.classList.add('-translate-x-full');
             backdrop.classList.add('hidden');
         }
-        
+
+
+
+
 
     </script>
-    <!-- swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>

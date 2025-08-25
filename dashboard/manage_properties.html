@@ -118,11 +118,13 @@
 
                         <!-- Dropdown -->
                         <ul class="mt-2 ml-6 space-y-2 hidden dropdown-menu">
-                            <li><a href="upload_agreement.html" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="upload_agreement.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/upload_agreement.png" alt="">
                                     Upload Agreement</a>
                             </li>
-                            <li><a href="user_agreement_list.html" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="user_agreement_list.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/pending.png" alt="">
                                     User Agreement List</a>
                             </li>
@@ -152,15 +154,18 @@
                                     <img class="w-4 h-4 mr-1" src="../images/meeting_schedule.png" alt="">
                                     Meeting Schedule</a>
                             </li>
-                            <li><a href="view_calendar.html" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="view_calendar.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/view_calendar.png" alt="">
                                     View Calendar</a>
                             </li>
-                            <li><a href="meeting_recording.html" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="meeting_recording.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/meeting_recording.png" alt="">
                                     Meeting Recording</a>
                             </li>
-                            <li><a href="meeting_upload.html" class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
+                            <li><a href="meeting_upload.html"
+                                    class=" px-3 py-1 text-sm hover:bg-gray-100 rounded flex items-center">
                                     <img class="w-4 h-4 mr-1" src="../images/upload_agreement.png" alt="">
                                     Meeting Upload</a>
                             </li>
@@ -256,13 +261,22 @@
                         <!-- Single Card -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <!-- Image with Wish List Ribbon -->
-                            <div class="relative">
+                            <div id="openModal" class="relative">
                                 <img src="../images/property.png" alt="Property" class="w-full h-48 object-cover">
                                 <div
                                     class="absolute top-3 left-[-30px] bg-white text-gray-700 text-xs font-semibold px-10 py-1 rotate-[-45deg] shadow">
                                     Wish List
                                 </div>
                             </div>
+
+
+                            <!-- <div class="flex items-center justify-center">
+                                <button id="openModal" class="bg-blue-600 text-white px-4 py-2 rounded-lg">
+                                    View Property Details
+                                </button>
+                            </div> -->
+
+
 
                             <!-- Content -->
                             <div class="p-4">
@@ -302,7 +316,117 @@
                             </div>
                         </div>
 
-                       
+
+
+
+
+                        <!-- Modal -->
+                        <div id="myModal"
+                            class="fixed inset-0 z-50 bg-opacity-50 hidden items-center justify-center ml-[15%]">
+                            <div
+                                class="bg-white rounded-xl shadow-lg max-w-4xl -[60%]  h-[90%] overflow-y-auto p-6 relative">
+
+                                <!-- Close Button -->
+                                <button id="closeModal"
+                                    class="absolute top-3 right-3 bg-red-500 text-white px-3 py-1 rounded-lg">
+                                    ✕
+                                </button>
+
+                                <!-- Content inside Modal -->
+                                <div class="space-y-6">
+
+                                    <!-- Back to Dashboard -->
+                                    <a href="#" class="text-sm text-gray-500 flex items-center gap-1">
+                                        ← Back to Dashboard
+                                    </a>
+
+                                    <!-- Property Images -->
+                                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                                        <img src="../images/property-1.png"
+                                            class="rounded-lg object-cover row-span-2 col-span-2" />
+                                        <img src="../images/property-2.png" class="rounded-lg object-cover" />
+                                        <img src="../images/property-3.png" class="rounded-lg object-cover" />
+                                        <img src="../images/property-4.png" class="rounded-lg object-cover" />
+                                        <img src="../images/property-5.png" class="rounded-lg object-cover " />
+                                    </div>
+
+                                    <!-- Title & Info -->
+
+                                    <div class="grid grid-cols-12 space-x-5">
+                                        <div class="col-span-4">
+                                            <div class="space-x-5">
+                                                <div class="flex items-center justify-between">
+                                                    <h1 class="text-2xl font-bold">This is test</h1>
+                                                    <p class=" bg-[#F5F5F5] py-1 px-2 rounded ">Wish List</p>
+                                                </div>
+                                                <p class="text-gray-600 text-xs">504 N Huntsdown Ave, Dresel Hill, PA 19026
+                                                </p>
+                                                <p class="text-gray-500 mt-2">This is test property</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-span-8 space-y-4 space-x-5">
+
+                                            <div class="grid grid-cols-4 gap-4 text-left">
+                                                <h1 class="text-xl font-semibold">Features</h1>
+                                            </div>
+                                            <div class="grid grid-cols-4 gap-4 text-left">
+                                                <div class="text-[#2B2B2B99]"> Bed Rooms <br><b>01</b></div>
+                                                <div class="text-[#2B2B2B99]"> Dining Rooms <br><b>02</b></div>
+                                                <div class="text-[#2B2B2B99]"> Bath Rooms <br><b>03</b></div>
+                                                <div class="text-[#2B2B2B99]"> Sqft <br><b>1,702</b></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Features -->
+
+
+                                    <!-- Property Details -->
+                                    <div class="bg-gray-100 p-4 rounded-lg grid grid-cols-3 space-y-7 gap-4">
+                                        <p>Auction Price: <br> <b>400 $</b></p>
+                                        <p>Estimated Price: <br> <b>500 $</b></p>
+                                        <p>Auction Date: <br> <b>29.05.2025</b></p>
+                                        <p>Booking Fee: <br> <b>200 $</b></p>
+                                        <p>Buying Price: <br> <b>400 $</b></p>
+                                        <p>Service Cost: <br> <b>N/A</b></p>
+                                        <p>Asking Price: <br> <b>1000 $</b></p>
+                                        <p>Selling Price:  <br><b>1000 $</b></p>
+                                        <p>Buying Date: <br> <b>29.05.2025</b></p>
+                                        <p>Listed Date: <br> <b>29.05.2025</b></p>
+                                    </div>
+
+                                    <!-- Status Updates -->
+                                    <div class="space-y-3">
+                                        <div class="bg-gray-100 p-3 rounded-lg">
+                                            30.05.2025 – The house current status is "Wish List" <br>
+                                            <span class="text-sm text-gray-500">May 30, 2025 05:49 AM</span>
+                                        </div>
+                                        <div class="bg-gray-100 p-3 rounded-lg">
+                                            30.05.2025 – The house current status is "Wish List" <br>
+                                            <span class="text-sm text-gray-500">May 30, 2025 05:49 AM</span>
+                                        </div>
+                                        <div class="bg-gray-100 p-3 rounded-lg">
+                                            30.05.2025 – The house current status is "Wish List" <br>
+                                            <span class="text-sm text-gray-500">May 30, 2025 05:49 AM</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Contact Button -->
+                                    <div class="text-center">
+                                        <button class=" text-orange-500 px-6 py-2 rounded-lg">
+                                            Contact About This Property
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
                         <!-- Single Card -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <!-- Image with Wish List Ribbon -->
@@ -352,7 +476,7 @@
                             </div>
                         </div>
 
-                       
+
                         <!-- Single Card -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <!-- Image with Wish List Ribbon -->
@@ -402,7 +526,7 @@
                             </div>
                         </div>
 
-                       
+
                         <!-- Single Card -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <!-- Image with Wish List Ribbon -->
@@ -452,7 +576,7 @@
                             </div>
                         </div>
 
-                       
+
                         <!-- Single Card -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <!-- Image with Wish List Ribbon -->
@@ -502,7 +626,7 @@
                             </div>
                         </div>
 
-                       
+
                         <!-- Single Card -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <!-- Image with Wish List Ribbon -->
@@ -552,7 +676,7 @@
                             </div>
                         </div>
 
-                       
+
                     </div>
 
                 </div>
@@ -596,6 +720,28 @@
             backdrop.classList.add('hidden');
         }
 
+
+        // property details modal
+        const openModal = document.getElementById("openModal");
+        const closeModal = document.getElementById("closeModal");
+        const modal = document.getElementById("myModal");
+
+        openModal.addEventListener("click", () => {
+            modal.classList.remove("hidden");
+            modal.classList.add("flex");
+        });
+
+        closeModal.addEventListener("click", () => {
+            modal.classList.add("hidden");
+            modal.classList.remove("flex");
+        });
+
+        modal.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                modal.classList.add("hidden");
+                modal.classList.remove("flex");
+            }
+        });
     </script>
 </body>
 
