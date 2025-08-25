@@ -190,7 +190,7 @@
                             Create Announcement
                         </li>
                     </a>
-                    <a class="py-2 hover:bg-gray-100 rounded" href="">
+                    <a class="py-2 hover:bg-gray-100 rounded" href="contact_us.html">
                         <li class="text-base flex items-center py-2 hover:bg-gray-100 rounded">
                             <img class="w-4 h-4 mr-1" src="../images/contact_Us.png" alt="">
                             Contact Us
@@ -214,122 +214,158 @@
             </aside>
 
             <!-- Main Content -->
-            <main class="flex-1 w-full">
-
-                <!-- Button -->
-                <div class="flex items-center justify-center">
-                    <button id="openModal" class="bg-blue-600 text-white px-4 py-2 rounded-lg">
-                        View Property Details
-                    </button>
-                </div>
-
-                <!-- Modal -->
-                <div id="myModal" class="fixed inset-0  bg-opacity-50 hidden items-center justify-center">
-                    <div class="bg-white rounded-xl shadow-lg w-[60%]  h-[90%] overflow-y-auto p-6 relative">
-
-                        <!-- Close Button -->
-                        <button id="closeModal"
-                            class="absolute top-3 right-3 bg-red-500 text-white px-3 py-1 rounded-lg">
-                            ✕
-                        </button>
-
-                        <!-- Content inside Modal -->
-                        <div class="space-y-6">
-
-                            <!-- Back to Dashboard -->
-                            <a href="#" class="text-sm text-gray-500 flex items-center gap-1">
-                                ← Back to Dashboard
-                            </a>
-
-                            <!-- Property Images -->
-                            <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                                <img src="../images/property-1.png" class="rounded-lg object-cover row-span-2 col-span-2" />
-                                <img src="../images/property-2.png" class="rounded-lg object-cover" />
-                                <img src="../images/property-3.png" class="rounded-lg object-cover" />
-                                <img src="../images/property-4.png" class="rounded-lg object-cover" />
-                                <img src="../images/property-5.png" class="rounded-lg object-cover " />
-                            </div>
-
-                            <!-- Title & Info -->
-                            <div>
-                                <h1 class="text-2xl font-bold">This is test</h1>
-                                <p class="text-gray-600">📍 504 N Huntsdown Ave, Dresel Hill, PA 19026</p>
-                                <p class="text-gray-500 mt-2">This is test property</p>
-                            </div>
-
-                            <!-- Features -->
-                            <div class="grid grid-cols-4 gap-4 text-center">
-                                <div>🛏 Bed Rooms <br><b>02</b></div>
-                                <div>🍽 Dining Rooms <br><b>01</b></div>
-                                <div>🛁 Bath Rooms <br><b>03</b></div>
-                                <div>📐 Sqft <br><b>1,702</b></div>
-                            </div>
-
-                            <!-- Property Details -->
-                            <div class="bg-gray-100 p-4 rounded-lg grid grid-cols-2 gap-4">
-                                <p>Auction Price: <b>400 $</b></p>
-                                <p>Estimated Price: <b>500 $</b></p>
-                                <p>Auction Date: <b>29.05.2025</b></p>
-                                <p>Booking Fee: <b>200 $</b></p>
-                                <p>Buying Price: <b>400 $</b></p>
-                                <p>Service Cost: <b>N/A</b></p>
-                                <p>Asking Price: <b>1000 $</b></p>
-                                <p>Selling Price: <b>1000 $</b></p>
-                                <p>Buying Date: <b>29.05.2025</b></p>
-                                <p>Listed Date: <b>29.05.2025</b></p>
-                            </div>
-
-                            <!-- Status Updates -->
-                            <div class="space-y-3">
-                                <div class="bg-gray-100 p-3 rounded-lg">
-                                    30.05.2025 – The house current status is "Wish List" <br>
-                                    <span class="text-sm text-gray-500">May 30, 2025 05:49 AM</span>
-                                </div>
-                                <div class="bg-gray-100 p-3 rounded-lg">
-                                    30.05.2025 – The house current status is "Wish List" <br>
-                                    <span class="text-sm text-gray-500">May 30, 2025 05:49 AM</span>
-                                </div>
-                                <div class="bg-gray-100 p-3 rounded-lg">
-                                    30.05.2025 – The house current status is "Wish List" <br>
-                                    <span class="text-sm text-gray-500">May 30, 2025 05:49 AM</span>
-                                </div>
-                            </div>
-
-                            <!-- Contact Button -->
-                            <div class="text-center">
-                                <button class="bg-orange-500 text-white px-6 py-2 rounded-lg">
-                                    Contact About This Property
-                                </button>
-                            </div>
-
-                        </div>
+            <main class="flex-1 ">
+                <div
+                    class="flex flex-col md:flex-row justify-between rounded-lg items-start md:items-center gap-4 bg-white px-4 py-6">
+                    <div>
+                        <h1 class="text-lg font-semibold">
+                            <span class="text-gray-500 text-base">Welcome,</span><br>
+                            <span class="text-2xl">Rimon Mridha</span>
+                        </h1>
+                    </div>
+                    <div>
+                        <p class="text-base">
+                            Total Investment:
+                            <span class="text-white px-4 py-2 rounded-lg ml-3 bg-[#183665] font-bold">- $1922.00</span>
+                        </p>
                     </div>
                 </div>
 
-                <script>
-                    const openModal = document.getElementById("openModal");
-                    const closeModal = document.getElementById("closeModal");
-                    const modal = document.getElementById("myModal");
-
-                    openModal.addEventListener("click", () => {
-                        modal.classList.remove("hidden");
-                        modal.classList.add("flex");
-                    });
-
-                    closeModal.addEventListener("click", () => {
-                        modal.classList.add("hidden");
-                        modal.classList.remove("flex");
-                    });
-
-                    modal.addEventListener("click", (e) => {
-                        if (e.target === modal) {
-                            modal.classList.add("hidden");
-                            modal.classList.remove("flex");
-                        }
-                    });
-                </script>
+                <!-- content -->
+                <div class="bg-white rounded-xl shadow p-6 mt-5 mx-4">
+                    <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-3 mb-4">
+                        <h2 class="text-2xl font-bold">Contact Us List</h2>
 
 
+                    </div>
+                    <hr class="mb-5 px-5 border-gray-200">
+
+
+
+
+                    <!-- Table -->
+                    <!-- Only adds horizontal scroll on small screens (md and down) -->
+                    <!-- Scrollable Table Wrapper -->
+                    <div
+                        class="w-full overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
+                        <table class="min-w-[800px] w-full text-left text-sm">
+                            <thead class="bg-gray-100 font-semibold">
+                                <tr>
+                                    <th class="p-2 text-center">No.</th>
+                                    <th class="p-2 text-center">Name</th>
+                                    <th class="p-2 text-center">Email</th>
+                                    <th class="p-2 text-center">Phone</th>
+                                    <th class="p-2 text-center">Message</th>
+                                    <th class="p-2 text-center">Actions</th>
+
+                                </tr>
+                            </thead>
+                            <tbody class="">
+                                <tr>
+                                    <td class="p-2 border-3  border-gray-100 text-center">01</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">Hasibul Hasan</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">b@gmail.com</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">01641973817</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">Sup! hfallrealty.com You...</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center space-x-2">
+                                        <button class="bg-gray-200 justify-center px-4 py-1 rounded">View</button>
+                                        <button class="bg-[#183665] text-white justify-center px-4 py-1 rounded">Delete</button>
+                                    </td>
+
+                                </tr>
+
+                              
+                                <tr>
+                                    <td class="p-2 border-3  border-gray-100 text-center">01</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">Hasibul Hasan</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">b@gmail.com</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">01641973817</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">Sup! hfallrealty.com You...</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center space-x-2">
+                                        <button class="bg-gray-200 justify-center px-4 py-1 rounded">View</button>
+                                        <button class="bg-[#183665] text-white justify-center px-4 py-1 rounded">Delete</button>
+                                    </td>
+
+                                </tr>
+
+                              
+                                <tr>
+                                    <td class="p-2 border-3  border-gray-100 text-center">01</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">Hasibul Hasan</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">b@gmail.com</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">01641973817</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">Sup! hfallrealty.com You...</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center space-x-2">
+                                        <button class="bg-gray-200 justify-center px-4 py-1 rounded">View</button>
+                                        <button class="bg-[#183665] text-white justify-center px-4 py-1 rounded">Delete</button>
+                                    </td>
+
+                                </tr>
+
+                              
+                                <tr>
+                                    <td class="p-2 border-3  border-gray-100 text-center">01</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">Hasibul Hasan</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">b@gmail.com</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">01641973817</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">Sup! hfallrealty.com You...</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center space-x-2">
+                                        <button class="bg-gray-200 justify-center px-4 py-1 rounded">View</button>
+                                        <button class="bg-[#183665] text-white justify-center px-4 py-1 rounded">Delete</button>
+                                    </td>
+
+                                </tr>
+
+                              
+                                <tr>
+                                    <td class="p-2 border-3  border-gray-100 text-center">01</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">Hasibul Hasan</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">b@gmail.com</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">01641973817</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">Sup! hfallrealty.com You...</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center space-x-2">
+                                        <button class="bg-gray-200 justify-center px-4 py-1 rounded">View</button>
+                                        <button class="bg-[#183665] text-white justify-center px-4 py-1 rounded">Delete</button>
+                                    </td>
+
+                                </tr>
+
+                              
+                                <tr>
+                                    <td class="p-2 border-3  border-gray-100 text-center">01</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center">Hasibul Hasan</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">b@gmail.com</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">01641973817</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center ">Sup! hfallrealty.com You...</td>
+                                    <td class="p-2 border-3  border-gray-100 text-center space-x-2">
+                                        <button class="bg-gray-200 justify-center px-4 py-1 rounded">View</button>
+                                        <button class="bg-[#183665] text-white justify-center px-4 py-1 rounded">Delete</button>
+                                    </td>
+
+                                </tr>
+
+                              
+
+
+                                <!-- More rows -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="flex flex-col sm:flex-row sm:justify-between items-start sm:items-center mt-4 gap-2">
+                        <p class="text-sm text-gray-500">Showing 01 of 20 Result</p>
+                        <div class="flex gap-2">
+                            <button class="px-2 py-1 border rounded">← Previous </button>
+                            <button class="px-2 py-1 border rounded">1</button>
+                            <button class="px-2 py-1 border rounded">2</button>
+                            <button class="px-2 py-1 border rounded">3</button>
+                            <button class="px-2 py-1 border rounded">Next →</button>
+                        </div>
+                    </div>
+
+
+                </div>
 
                 <!-- Footer -->
 
@@ -369,10 +405,6 @@
             sidebar.classList.add('-translate-x-full');
             backdrop.classList.add('hidden');
         }
-
-
-
-
 
     </script>
 </body>
