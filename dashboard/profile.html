@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- fontawesome  -->
     <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
-    <!-- swiperjs  -->
+    <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <title>HFall</title>
 </head>
 
@@ -355,43 +359,85 @@
                         </div>
 
                         <div class="col-span-2">
-                            <div class="grid grid-cols-2 gap-5">
-                                <!-- Uploaded Agreements Card -->
-                                <div>
-                                    <h3 class="text-md font-bold mb-2">Uploaded Agreements (5)</h3>
-                                    <div class="bg-white shadow rounded-lg p-6 flex flex-col items-center text-center">
-                                        <h2 class="text-base font-bold mb-4">Upload Document</h2>
-                                        <input type="file" id="file1" class="hidden" />
-                                        <label for="file1"
-                                            class="bg-gray-100 px-2 py-1  rounded cursor-pointer hover:bg-gray-200">
-                                            Upload File
-                                        </label>
-                                        <p class="text-sm text-gray-500 mt-2">Uploaded: May 27, 2025</p>
-                                        <button
-                                            class="bg-[#183665] text-white mt-3 px-4 py-2 w-full rounded hover:bg-[#152c52]">
-                                            Open Document
-                                        </button>
-                                    </div>
-                                </div>
+                            <!-- Example Slider 1 -->
+                            <div class="swiper mySwiper" data-slides="2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="bg-white shadow rounded-lg p-6 flex flex-col items-center text-center">
+                                            <h2 class="text-base font-bold mb-4">Upload Document</h2>
 
-                                <!-- Another Card -->
-                                <div>
-                                    <h3 class="text-md font-bold mb-2">System Agreements</h3>
-                                    <div class="bg-white shadow rounded-lg p-6 flex flex-col items-center text-center">
-                                        <h2 class="text-base font-bold mb-4">Upload Document</h2>
-                                        <input type="file" id="file1" class="hidden" />
-                                        <label for="file1"
-                                            class="bg-gray-100 px-2 py-1  rounded cursor-pointer hover:bg-gray-200">
-                                            Upload File
-                                        </label>
-                                        <p class="text-sm text-gray-500 mt-2">Uploaded: May 27, 2025</p>
-                                        <button
-                                            class="bg-[#183665] text-white mt-3 px-4 py-2 w-full rounded hover:bg-[#152c52]">
-                                            Open Document
-                                        </button>
+                                            <p class="bg-gray-100 px-2 py-1  rounded ">
+                                                Upload File
+                                            </p>
+                                            <p class="text-sm text-gray-500 mt-2">Uploaded: May 27, 2025</p>
+                                            <button
+                                                class="bg-[#183665] text-white mt-3 px-4 py-2 w-full rounded hover:bg-[#152c52]">
+                                                <input type="file" id="file1" class="hidden" />
+                                                <label for="file1" class=" px-2 py-1  rounded cursor-pointer ">
+                                                    Open Document
+                                                </label>
+                                            </button>
+                                        </div>
                                     </div>
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="bg-white shadow rounded-lg p-6 flex flex-col items-center text-center">
+                                            <h2 class="text-base font-bold mb-4">Upload Document</h2>
+
+                                            <p class="bg-gray-100 px-2 py-1  rounded ">
+                                                Upload File
+                                            </p>
+                                            <p class="text-sm text-gray-500 mt-2">Uploaded: May 27, 2025</p>
+                                            <button
+                                                class="bg-[#183665] text-white mt-3 px-4 py-2 w-full rounded hover:bg-[#152c52]">
+                                                <input type="file" id="file1" class="hidden" />
+                                                <label for="file1" class=" px-2 py-1  rounded cursor-pointer ">
+                                                    Open Document
+                                                </label>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="bg-white shadow rounded-lg p-6 flex flex-col items-center text-center">
+                                            <h2 class="text-base font-bold mb-4">Upload Document</h2>
+
+                                            <p class="bg-gray-100 px-2 py-1  rounded">
+                                                Upload File
+                                            </p>
+                                            <p class="text-sm text-gray-500 mt-2">Uploaded: May 27, 2025</p>
+                                            <button
+                                                class="bg-[#183665] text-white mt-3 px-4 py-2 w-full rounded hover:bg-[#152c52]">
+                                                <input type="file" id="file1" class="hidden" />
+                                                <label for="file1" class=" px-2 py-1  rounded cursor-pointer ">
+                                                    Open Document
+                                                </label>
+                                            </button>
+                                        </div>
+                                    </div>
+
                                 </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
                             </div>
+
+                            <!-- Example Slider 2
+                            <div class="swiper mySwiper" data-slides="6">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="../images/property-1.jpg" /></div>
+                                    <div class="swiper-slide"><img src="../images/property-2.jpg" /></div>
+                                    <div class="swiper-slide"><img src="../images/property-3.jpg" /></div>
+                                    <div class="swiper-slide"><img src="../images/property-4.jpg" /></div>
+                                    <div class="swiper-slide"><img src="../images/property-5.jpg" /></div>
+                                    <div class="swiper-slide"><img src="../images/property-1.jpg" /></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div> -->
+
                         </div>
 
                     </div>
@@ -482,11 +528,32 @@
             sidebar.classList.add('-translate-x-full');
             backdrop.classList.add('hidden');
         }
-        
+
+        // swiper js
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".mySwiper").forEach((slider) => {
+                let slidesPerView = parseInt(slider.dataset.slides) || 1; // default 1
+                let spaceBetween = parseInt(slider.dataset.space) || 20; // optional
+
+                new Swiper(slider, {
+                    slidesPerView: slidesPerView,
+                    spaceBetween: spaceBetween,
+                    loop: true,
+                    pagination: {
+                        el: slider.querySelector(".swiper-pagination"),
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: slider.querySelector(".swiper-button-next"),
+                        prevEl: slider.querySelector(".swiper-button-prev"),
+                    },
+                });
+            });
+        });
+
 
     </script>
-    <!-- swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>
